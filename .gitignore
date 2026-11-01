@@ -1,0 +1,33 @@
+# Local search cache
+/config/index.sqlite
+/config/index.sqlite-shm
+/config/index.sqlite-wal
+
+# Generated exports and scratch imports
+/exports/*
+!/exports/.gitkeep
+/imports/staging/*
+!/imports/staging/README.md
+/imports/raw/SOURCE_MANIFEST.json
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+credentials*
+secrets*
+
+# Operating system and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

@@ -1,0 +1,78 @@
+{
+  "imported_at": "2026-11-01",
+  "zip_sha256": "2536b54b8eaa8ea655d2af105db91e6116952ce4f82cf14d0825f14a333354c1",
+  "files": [
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/01-outdoor-ambience-weather.md",
+      "bytes": 3566,
+      "sha256": "24517c21d7bbac01bebb61fd17f666c5730c31a68ed097ffe4237884f022d44c"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/02-interior-ambience-electronics-room-tone.md",
+      "bytes": 3057,
+      "sha256": "7de81ec9c9ba182d133b0240a804606cde8f5358fc247b7dc45052d670967a65"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/03-footsteps-locomotion-environmental-foley.md",
+      "bytes": 3359,
+      "sha256": "187ed0724be69d9c4082a04378a075079e62497e10d40c0e27f03f86b39f6fb2"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/04-doors-locks-switches-physical-interactions.md",
+      "bytes": 3346,
+      "sha256": "42e93df64e198504e375f1f264ce388b322516dea3767049c6260b50da667de6"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/05-ui-clicks-prompts-inventory-gadget-beeps.md",
+      "bytes": 5014,
+      "sha256": "7420a9deb351f872da2f7a8f445f87c9491351d12e2b05dfdaddca6315c3b5fb"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/06-horror-stingers-suspense-cues-music.md",
+      "bytes": 5396,
+      "sha256": "85d8ae1a59b711b6ebb571f7ebba68d85af2be409623450d73d3c5c0e13983f4"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/07-mechanical-radio-glitch-creature-design.md",
+      "bytes": 3105,
+      "sha256": "08bb6fa1e5649f8d29b486aaf43fba3bec971202208ef95735c3340f0b7eb641"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/08-ui-kits-icon-packs-menus-models-plugins.md",
+      "bytes": 3350,
+      "sha256": "f99bf8ab83585b1666fe37050ef83dd84a8e47b02ce94eddf2d0e15a9d63198c"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/09-character-animations-individual-animation-ids.md",
+      "bytes": 4939,
+      "sha256": "164550499225dc7f0e8ff0eb5872dbf78bcfce35a9d19c13d47c638e4f852e42"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/10-animation-systems-horror-rigs-gameplay-models.md",
+      "bytes": 2750,
+      "sha256": "0ef01171769cb9ed04006e5da9f0c77c7c6dc8e080dd25d59271e64c6520f62a"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/11-flashlights-lighting-locations.md",
+      "bytes": 2954,
+      "sha256": "85ccb2263266c2a475b69b06dea58721bf4be46fae2d7d6e131a679d59b7ce3e"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/ALL_ASSETS.csv",
+      "bytes": 52089,
+      "sha256": "18fae86afbb9551f9fca14948556d3bb1180dff73914a38842eb7b495684a2e4"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/ALL_ASSETS.json",
+      "bytes": 103335,
+      "sha256": "bf4c04d4a5ee862fd699100ccc653d69e227bd235f1e732874c61a0bfb805c33"
+    },
+    {
+      "path": "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/README.md",
+      "bytes": 6439,
+      "sha256": "edf1b8a439e2e8554197bece5b00fed206c6ca6b1a8e44a64ff2d0e581e03d5b"
+    }
+  ],
+  "source_zip_name": "Roblox_Horror_Asset_Vault_2026-11-01.zip",
+  "public_copy_note": "Sanitized public copy; the personal local archive path was removed. The original immutable manifest is retained locally and not published."
+}\n
