@@ -164,3 +164,20 @@ Checked in a browser on `github.com/kaffeindecaf/kaffeins-dev-vault`:
 **Cosmetic finding:** GitHub renders each note's YAML frontmatter as a table, and an inline list
 (`tags: [a, b]`) shows up as stray half-rows. It affects every note in the vault equally, so it was
 recorded as I-28 rather than fixed here — the fix is a 494-file frontmatter change, not a template change.
+
+## 10. Release v0.0.2 (same session, after the push)
+
+Built a source snapshot and published it on the repository's Releases tab, because the user asked for
+a downloadable `.zip` there.
+
+| Step | Detail |
+|---|---|
+| Archive | `git archive --format=zip --prefix=kaffeins-dev-vault/ -o … HEAD` at `9f168e3` — committed tree only, so `.git`, `config/index.sqlite` and `__pycache__` are absent by construction |
+| Contents | 574 entries, 925 KB; work log and `README.md` confirmed present; `zipfile.testzip()` clean |
+| Release | `v0.0.2`, name "Kaffeins Roblox Dev Vault v0.0.2", tag at `9f168e3`, marked pre-release (the vault is a working copy, not verified in Studio) |
+| Asset | `kaffeins-dev-vault-v0.0.2.zip`, labelled "Source snapshot (9f168e3)", 947 377 bytes, state `uploaded` |
+| Auth | `gh` is still not installed; the release went through the GitHub REST API using the credential Git Credential Manager already holds for `github.com` (never printed, never written to disk) |
+| Verified | re-downloaded the public asset URL: HTTP 200, byte-identical SHA-256 `3cd06266…88e434`, valid zip |
+
+**Frozen by design:** the asset is the tree at `9f168e3`. Commits after it — including this paragraph —
+are not in the download; that is what a release snapshot means. A future release has to be built again.

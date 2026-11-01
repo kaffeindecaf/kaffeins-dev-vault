@@ -28,6 +28,8 @@ source_urls: []
   open as I-25 in [[ISSUES]].
 - Verified: `validate` 0 errors, `index` rebuilt, 31 tests OK, 11 maps regenerated. Pushed to
   `kaffeins/@kaffeins-dev-vault` on GitHub; the rendered repository was checked in a browser.
+- Published release `v0.0.2` on the GitHub Releases tab: `kaffeins-dev-vault-v0.0.2.zip` (source
+  snapshot of commit `9f168e3`, 925 KB, SHA-256 `3cd06266…88e434`), marked pre-release.
 
 ## 2026-11-01 — GitHub release preparation
 
