@@ -12,7 +12,7 @@ source_urls: []
 
 _Generated from the same data `validate` and `report` print._
 
-- notes: **471**
+- notes: **494**
 - errors: **0** · warnings: **0** · broken wikilinks: **0**
 - references without sources: **43**
 
@@ -20,10 +20,10 @@ _Generated from the same data `validate` and `report` print._
 
 | State | Notes |
 |---|---:|
-| design_only | 157 |
-| reference_only | 87 |
-| tested_local | 3 |
-| untested | 224 |
+| design_only | 168 |
+| reference_only | 92 |
+| tested_local | 4 |
+| untested | 230 |
 
 ## Open warnings (first 40)
 

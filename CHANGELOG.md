@@ -10,6 +10,25 @@ source_urls: []
 
 # CHANGELOG
 
+## 2026-11-01 — Agent work log templates (schema v2)
+
+- Added `T-worklog` and `T-handoff` templates plus the `G-worklog-protocol` guide in
+  `09 - AI Agent Knowledge/Work Log/`. Every session that changes the vault now leaves one dated
+  entry: task and scope, a per-file change table, the commands that actually ran, open questions and
+  three next steps; unfinished work also gets a handoff brief.
+- Added `worklog` to the controlled note types and `WL` to the ID prefixes; `schema_version` is now 2.
+  Recorded as D-0010 in [[DECISIONS]].
+- First entry, `worklog-2026-11-01-worklog-templates`, records this session and doubles as the worked
+  example.
+- Wired the protocol into [[README]] (contributing and folder map), [[NEXT_STEPS]] (new step 0),
+  [[SCHEMA]] (§11), the session-start prompt, and the generated maps; the MOC intro strings no longer
+  hardcode a template count.
+- Corrected the stale vault path in D-0009 after the folder was renamed to `kaffeins-vault-v0.0.2`.
+- `AGENTS.md` still says nothing about the work log: the edit was refused by the write guard and is
+  open as I-25 in [[ISSUES]].
+- Verified: `validate` 0 errors, `index` rebuilt, 31 tests OK, 11 maps regenerated. Pushed to
+  `kaffeins/@kaffeins-dev-vault` on GitHub; the rendered repository was checked in a browser.
+
 ## 2026-11-01 — GitHub release preparation
 
 - Reworked the root README for GitHub with concise setup/search instructions, two Mermaid flowcharts,

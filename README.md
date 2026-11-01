@@ -24,8 +24,9 @@ The vault is Markdown first. Open it in Obsidian for backlinks and maps, or read
 - A research catalogue of 209 asset candidates, with source and verification fields
 - A Python command-line tool for searching notes, building an index, and exporting records
 - Templates and working guidance for documenting new research
+- A work log per agent session — change table, real command output, and next steps
 
-The content report counts 490 notes; the validator separately checks notes and excludes eight test fixtures. The 206 imported asset records are preserved alongside three separately researched candidates. None of the candidates has been verified in Studio.
+The content report counts 494 notes; the validator separately checks notes and excludes eight test fixtures. The 206 imported asset records are preserved alongside three separately researched candidates. None of the candidates has been verified in Studio.
 
 ## Start here
 
@@ -93,7 +94,8 @@ Contributions are welcome as focused changes that make a note easier to verify o
 4. Label code blocks `Tested:`, `Untested:`, or `Pseudocode:`. Studio testing needs a date and evidence path.
 5. Keep asset access, safety, and license fields at `unknown` unless they were actually checked.
 6. Update the relevant map, [CHANGELOG.md](CHANGELOG.md), and [ISSUES.md](ISSUES.md) when appropriate.
-7. From the vault root, run the checks below and include their real output in your pull request.
+7. Write a work log entry for the session in [09 - AI Agent Knowledge/Work Log](09%20-%20AI%20Agent%20Knowledge/Work%20Log): what you did, which files you changed and why, the commands you actually ran, and the next logical steps. Template: [T-worklog](11%20-%20Templates%20and%20Schemas/Templates/T-worklog.md); protocol: [G-worklog-protocol](09%20-%20AI%20Agent%20Knowledge/Work%20Log/G-worklog-protocol.md).
+8. From the vault root, run the checks below and include their real output in your pull request.
 
 ```sh
 python scripts/gamedev_kb.py validate
@@ -115,7 +117,7 @@ Please don’t include credentials, private place data, copied asset files, or p
 06 - UI UX and Game Feel/
 07 - Level Design and Progression/
 08 - Bugs and Solutions/
-09 - AI Agent Knowledge/
+09 - AI Agent Knowledge/   briefs, prompts, and per-session work logs
 10 - Projects and Experiments/
 11 - Templates and Schemas/
 12 - Reference Sources/

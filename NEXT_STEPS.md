@@ -12,6 +12,12 @@ source_urls: []
 
 Written for whoever continues next (human or agent). Each item is concrete and copy-pasteable.
 
+## 0. Read the newest work log first
+
+`09 - AI Agent Knowledge/Work Log/` holds one entry per agent session: what changed, the commands
+that actually ran, and the next steps. If its last entry is newer than this file, follow the work log
+and update this file rather than the other way round. Protocol: [[G-worklog-protocol]].
+
 ## 1. Verify the new persistence example in an isolated place
 
 Use [[S-datastore-player-profile]] and its linked `roblox-core-loop` / `roblox-mcp-workflow` skill
@@ -43,4 +49,6 @@ lexical search is shown to miss a concrete task.
 
 ## Keep the habit
 
-After any real work: append [[CHANGELOG]], update [[STATUS]], and re-run `validate` + `index`.
+After any real work: append [[CHANGELOG]], update [[STATUS]], write a work log entry
+([[T-worklog]]; handoff brief [[T-handoff]] if unfinished), and re-run `validate` + `index`.
+An entry that says "not run" is worth more than an entry that implies everything passed.

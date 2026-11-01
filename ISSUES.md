@@ -34,7 +34,7 @@ Open items only. Closed items move to [[CHANGELOG]].
 | I-04 | Frontmatter uses a restricted YAML subset ([[DECISIONS]] D-0006). | Anchors, block scalars, multi-line strings and deep nesting are rejected. | Validator fails loudly (`yaml_block_scalar_unsupported`); keep frontmatter flat. |
 | I-05 | `context --budget` approximates tokens at ~4 characters per token. | A pack may exceed a model's real token budget by a little. | Documented in the command output and in [[README]]; use `--count` to cap notes. |
 | I-06 | Search is lexical (BM25 + boosts), not semantic. | A query using different vocabulary than the note can miss it. | Use the MOCs and tags; embeddings are deliberately deferred (roadmap P19). |
-| I-07 | No git repository is initialised. | No diff history inside the vault. | Initialize Git after the release contents and staging policy are reviewed. |
+| I-27 | The test suite runs `scripts/import_assets.py` against the live vault root (`tests/test_kb.py`, importer test). | A "test" rewrites `IMPORT_REPORT.md` in the working tree, so a green run can leave an unexpected diff. Asset notes are subject to the idempotency check (`created=0 unchanged=206`) and are not modified. | Expect that diff and commit it, or point the test at a copied fixture vault. |
 | I-08 | Dashboards are regenerated only when you run `report --write-dashboards`. | A stale dashboard is possible. | The dashboard header says when it was generated. |
 
 ## Content gaps (honest)
@@ -62,6 +62,13 @@ Open items only. Closed items move to [[CHANGELOG]].
 | I-23 | No pre-rename file-hash manifest was recorded for the source game-vault package. | The package root was renamed after inventory; a pre/post hash comparison is unavailable. | Treat the renamed source as preserved by same-volume directory move; capture a current manifest if future migration is planned. |
 | I-24 | An empty legacy working directory remains locked by a running process outside this vault. | The 524 files are in the active destination and matched by SHA-256; the legacy directory has no vault contents. | Close the process holding that directory and remove the empty stub if desired. |
 
+## Agent work log rollout (2026-11-01)
+
+| # | Issue | Impact | Next action |
+|---|---|---|---|
+| I-25 | `AGENTS.md` still has no pointer to the work log: the write was refused by the credential guard (approval prompt timed out), so §2 "read before you write" and §6 "when you finish" are unchanged. | The rules still bind through [[SCHEMA]] §11 and [[G-worklog-protocol]], but the file an agent reads *first* does not mention that a log is mandatory. | A human approves the two-line edit to `AGENTS.md` §2 and §6. Until then, [[NEXT_STEPS]] step 0 and the session-start prompt carry it. |
+| I-26 | The `gh` CLI is not installed on the authoring machine. | Remote checks used `git` and a browser; `gh pr checks`, `gh release` and `gh api` workflows are unavailable, and CI status cannot be asserted. | Install GitHub CLI if PR-level automation is wanted. Not required for clone/push. |
+
 ## Known cosmetic issues
 
 | # | Issue | Impact | Mitigation |
@@ -73,7 +80,6 @@ Open items only. Closed items move to [[CHANGELOG]].
 | # | Item | Why |
 |---|---|---|
 | I-14 | All of Phase 19 (embeddings, MCP server, watch mode, editor integration) | Roadmap P19 is optional and depends on P18. Lexical search has not yet been shown insufficient, so building semantic retrieval now would add dependencies for no measured gain. |
-| I-15 | `git init` and history | A repository should be initialized after its public contents and staging policy are reviewed ([[RELEASE_CHECKLIST]]). |
 
 ## Resolved
 
@@ -83,6 +89,9 @@ Open items only. Closed items move to [[CHANGELOG]].
 
 - **I-13** ~~Import reconciliation uncertain~~ → 206 source rows, 206 distinct IDs, 0 duplicates,
   0 CSV/JSON mismatch (`IMPORT_REPORT.md`).
+- **I-07 / I-15** ~~No git repository, no diff history~~ → repository initialised 2026-11-01 on
+  branch `main` and pushed to `github.com/kaffeindecaf/kaffeins-dev-vault` (`a907afc`); see
+  [[worklog-2026-11-01-worklog-templates]].
 - **I-16** ~~Dashboards could go stale silently~~ → each generated dashboard carries its generation date, and
   `report --write-dashboards` regenerates all five.
 - **I-17** ~~Unclear what "tested" means for the tooling~~ → `verification: tested_local` added to the enum and

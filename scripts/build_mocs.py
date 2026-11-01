@@ -45,14 +45,16 @@ LIBS = [
      "Blockouts, floorplan patterns, room arcs, puzzles, procedural constraints and a complete worked level "
      "plan. Solvability is treated as a testable property, not a hope."),
     ("09 - AI Agent Knowledge", "MOC-agent-knowledge", "MOC-agent-knowledge", "AI Agent Knowledge",
-     "The contract for agents (`AGENTS.md` at the root), per-harness briefs, prompt templates, context packs "
-     "and the promotion rules that stop AI output from becoming 'documented fact'."),
+     "The contract for agents (`AGENTS.md` at the root), per-harness briefs, prompt templates, context packs, "
+     "the promotion rules that stop AI output from becoming 'documented fact', and the `Work Log/` folder "
+     "where each session records what it changed and what to do next."),
     ("10 - Projects and Experiments", "MOC-projects", "MOC-projects", "Projects and Experiments",
      "A reusable project starter and one worked sample project. Projects link to reusable systems instead of "
      "copying them, so a fix to a recipe reaches every project."),
     ("11 - Templates and Schemas", "MOC-templates", "MOC-templates", "Templates and Schemas",
-     "Sixteen note templates with valid frontmatter, plus the fixtures the validator tests against. Copy a "
-     "template, replace the placeholders, run `validate`."),
+     "Note templates with valid frontmatter, plus the fixtures the validator tests against. Copy a "
+     "template, replace the placeholders, run `validate`. Start with `T-spec` before the work and "
+     "`T-worklog` after it."),
     ("13 - Dashboards", "MOC-dashboards", "MOC-dashboards", "Dashboards",
      "Generated views: asset status, vault health and recently updated notes. Regenerate with "
      "`python scripts/gamedev_kb.py report --write-dashboards`."),

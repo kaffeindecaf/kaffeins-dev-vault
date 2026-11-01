@@ -47,8 +47,7 @@ template. Re-run `python scripts/import_assets.py` to reproduce.
 ## What is preserved, and what is not claimed
 
 - The original files are byte-identical under `imports/raw/` (hashes in
-  `imports/raw/SOURCE_MANIFEST.json`). Nothing under `imports/raw/` is ever edited. A sanitized
-  public copy of the manifest is at `imports/SOURCE_MANIFEST_PUBLIC.json`.
+  `imports/raw/SOURCE_MANIFEST.json`). Nothing in `imports/` is ever edited.
 - Every imported note carries the verbatim source row inside a `json` block under
   **Provenance**, and `verification: untested`.
 - `source_grade` is passed through unchanged. It records where the ID came from, not quality,

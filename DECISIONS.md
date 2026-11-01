@@ -91,3 +91,24 @@ One entry per decision that would be expensive to reverse. Newest first.
 - **Why:** the owner requested a single parent location for the merged game-development vault.
 - **Consequence:** the vault is nested under its versioned parent folder. The active root is the
   `GameDev-Knowledge-Base` directory; material outside it remains outside the writable root.
+
+**Update 2026-11-01 (later the same day):** the nested directory was renamed to
+`kaffeins-vault-v0.0.2`, so the active root is now
+`Desktop/kaffeins-dev-vault-v0.0.2/kaffeins-vault-v0.0.2`. The decision itself is unchanged: one
+active vault, inside the versioned parent. Recorded in
+[[worklog-2026-11-01-worklog-templates]] because the earlier path is now wrong everywhere it is quoted.
+
+## D-0010 — Agent work logs are a first-class note type
+
+- **Date:** 2026-11-01
+- **Decision:** add `worklog` to the controlled `type` list and the `WL` ID prefix
+  (`schema_version` 2). Every session that changes the vault writes one dated entry in
+  `09 - AI Agent Knowledge/Work Log/`, using [[T-worklog]]; unfinished work also gets a
+  [[T-handoff]] brief.
+- **Why:** the vault recorded what is known (library notes), what changed per release
+  ([[CHANGELOG]]) and what is open ([[ISSUES]]), but not what the *last agent did* or what it would
+  do next. The next session was reconstructing state from `git diff`, which loses intent.
+- **Consequence:** an entry is cheap (one file, a change table, three next steps) and searchable
+  (`search --type worklog`). Work logs stay `draft` and are never a home for knowledge — a reusable
+  fact still has to land in a library note with its own verification label. Protocol:
+  [[G-worklog-protocol]].

@@ -28,10 +28,13 @@ Rules I care about:
 - Cite note paths (and verification state) for claims you use.
 - Cause first, in plain words, then the fix.
 - Ask before anything destructive, anything touching money/saved data, or installing software.
-- After the work: update the note, append CHANGELOG, and run validate + index.
+- After the work: update the note, append CHANGELOG, run validate + index, and write a work log
+  entry (T-worklog) listing what changed, how you verified it and the three next steps.
 
 My task: <task>
 ```
 
-The one-line version for a small fix: "Read AGENTS.md, search the vault, fix <x>, run validate."
+End every session with a file, not a summary: `09 - AI Agent Knowledge/Work Log/` ([[T-worklog]]),
+plus [[T-handoff]] if the work stops mid-stream. The one-line version for a small fix: "Read
+AGENTS.md, check the newest work log, search the vault, fix <x>, run validate, log it."
 

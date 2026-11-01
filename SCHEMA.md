@@ -37,6 +37,7 @@ Every note has an `id` in frontmatter: `PREFIX-NNN` or `PREFIX-slug`.
 | `SP` | spec | `SP-adaptive-director` |
 | `T` | template | `T-asset` |
 | `DB` | generated dashboard | `DB-status` |
+| `WL` | agent work log / handoff brief | `WL-20261101-worklog-templates` |
 | `N` | plain note | `N-SCHEMA` |
 
 Rules:
@@ -68,7 +69,7 @@ Optional but common: `created`, `confidence` (`low|medium|high`), `verification`
 ## 3. Controlled values
 
 `type`: asset, system, bug, project, source, prompt, reference, principle, experiment, decision,
-moc, guide, spec, template, dashboard, changelog, report.
+moc, guide, spec, template, dashboard, changelog, report, worklog.
 
 `status` (authoring lifecycle, not evidence): idea → draft → reviewed → tested. `deprecated` means
 superseded; keep the note and link the replacement.
@@ -159,3 +160,28 @@ non-string `asset_id`, `asset_id` that is not 1–20 digits, `usage_uri` whose s
 `asset_type`, malformed ISO date.
 Warnings: broken wikilink, missing `source_urls` on a `reference` note, `tested_*` verification
 without `test_evidence`, an asset claiming `access_status` other than `unknown` with no evidence.
+
+## 11. Agent work logs (`schema_version: 2`)
+
+Every session that changes the vault leaves one work log entry in
+`09 - AI Agent Knowledge/Work Log/`. It is the handoff record: what the agent did, which files it
+changed and why, what it actually ran, and the three logical next steps.
+
+```yaml
+id: WL-20261101-worklog-templates   # WL-YYYYMMDD-<slug>, handoff: ...-handoff
+type: worklog
+status: draft                        # stays draft; a human may set reviewed
+agent: Hermes Agent (deepseek-flash) # harness and model, so provenance is visible
+verification: tested_local           # tested_local only if the CLI really ran; never tested_studio
+related: [ "T-worklog", "T-handoff" ]
+```
+
+Rules:
+
+- File name `worklog-YYYY-MM-DD-<slug>.md`; one file per session, never one growing diary.
+- Entries are append-only. To correct an earlier entry, write a new dated entry that supersedes it
+  and link back — do not rewrite history.
+- A work log is **not** knowledge. Anything reusable belongs in the proper library note with its own
+  verification label; the log only points at it.
+- No secrets, tokens or machine-specific absolute paths in an entry — the vault is published.
+- Protocol: [[G-worklog-protocol]]. Templates: [[T-worklog]] and [[T-handoff]].

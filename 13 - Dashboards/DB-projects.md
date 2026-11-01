@@ -15,21 +15,21 @@ _Generated. One row per `project`-type note; milestone counts come from the proj
 | Project | Status | Notes in folder | Where |
 |---|---|---|---|
 | [[Psample-care-home]] | reviewed | 1 | `10 - Projects and Experiments/P-sample-horror-house/` |
-| [[Tproject-ACCESSIBILITY_CHECKLIST]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-ARCHITECTURE]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-ASSET_MANIFEST]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-BUGS]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-CHANGELOG]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-DECISIONS]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-DESIGN]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-FEATURES]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-HANDOFF]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-README]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-RELEASE_NOTES]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-ROADMAP]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-SECURITY_CHECKLIST]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-SOURCE_OF_TRUTH]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-SYSTEM_DEPENDENCIES]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
-| [[Tproject-TEST_PLAN]] | reviewed | 16 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-ACCESSIBILITY_CHECKLIST]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-ARCHITECTURE]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-ASSET_MANIFEST]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-BUGS]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-CHANGELOG]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-DECISIONS]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-DESIGN]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-FEATURES]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-HANDOFF]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-README]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-RELEASE_NOTES]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-ROADMAP]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-SECURITY_CHECKLIST]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-SOURCE_OF_TRUTH]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-SYSTEM_DEPENDENCIES]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
+| [[Tproject-TEST_PLAN]] | reviewed | 20 | `10 - Projects and Experiments/_PROJECT_TEMPLATE/` |
 
 **17 project note(s).** The reusable starter is `10 - Projects and Experiments/_PROJECT_TEMPLATE/`; worked example: `P-sample-horror-house`.
