@@ -137,8 +137,16 @@ Studio. `AGENTS.md` needs the owner's approval to edit.
 
 ## 9. Post-push verification (added after the commit)
 
-Commit `13f1080` pushed to `origin/main` (`a907afc..13f1080`), confirmed by `git ls-remote origin`
-returning `13f1080` for both `HEAD` and `refs/heads/main` — not by trusting the push output alone.
+Pushed in this order, each verified with `git ls-remote origin` (returning the same hash for `HEAD`
+and `refs/heads/main`) rather than by trusting the push output:
+
+| Commit | Subject | Pushed |
+|---|---|---|
+| `13f1080` | docs(agents): add work log + handoff templates, worklog note type (schema v2) | `a907afc..13f1080` |
+| `0006a3d` | docs(worklog): record post-push GitHub verification; note I-28 | `13f1080..0006a3d` |
+| `cf8c279` | docs(release): mark the release checks that actually ran | `0006a3d..cf8c279` |
+
+Each later commit is the previous one's honest correction; the record stops at `cf8c279`.
 
 Checked in a browser on `github.com/kaffeindecaf/kaffeins-dev-vault`:
 
