@@ -134,3 +134,25 @@ the format, not a ritual. The expensive mistake to avoid is re-deriving the sche
 `config/vault.json` and [[SCHEMA]] first — `type: worklog` and the `WL` prefix are legal since
 schema v2. Do not edit `imports/raw/**` and do not mark anything `tested_studio` that was not run in
 Studio. `AGENTS.md` needs the owner's approval to edit.
+
+## 9. Post-push verification (added after the commit)
+
+Commit `13f1080` pushed to `origin/main` (`a907afc..13f1080`), confirmed by `git ls-remote origin`
+returning `13f1080` for both `HEAD` and `refs/heads/main` — not by trusting the push output alone.
+
+Checked in a browser on `github.com/kaffeindecaf/kaffeins-dev-vault`:
+
+| Check | Observed |
+|---|---|
+| commits | 2 commits, newest `docs(agents): add work log + handoff templates, worklog note type (schema v2)` |
+| root tree | all 14 numbered libraries plus `imports/`, `scripts/`, `tests/`, `config/`, `attachments/` |
+| file count on the remote | 529 files (`git ls-tree -r origin/main`) |
+| README | renders; 27 Mermaid SVG nodes drawn; sections and folder map intact |
+| `09 - AI Agent Knowledge/Work Log/` | both files listed; the README's `blob` link redirects to `tree`, so the folder opens |
+| MOC-agent-knowledge | lists `Work Log/ G-worklog-protocol` and `Work Log/ worklog-2026-11-01-…` with their types |
+| SCHEMA.md | §11 "Agent work logs (schema_version: 2)" present and rendered |
+| repository About | description, five topics (agent-skills, game-development, obsidian-vault, roblox, user-interface) and the CC0-1.0 licence badge already set |
+
+**Cosmetic finding:** GitHub renders each note's YAML frontmatter as a table, and an inline list
+(`tags: [a, b]`) shows up as stray half-rows. It affects every note in the vault equally, so it was
+recorded as I-28 rather than fixed here — the fix is a 494-file frontmatter change, not a template change.

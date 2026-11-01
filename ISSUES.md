@@ -73,6 +73,7 @@ Open items only. Closed items move to [[CHANGELOG]].
 
 | # | Issue | Impact | Mitigation |
 |---|---|---|---|
+| I-28 | GitHub's frontmatter table renders an inline list (`tags: [a, b]`, `related: [...]`) as stray half-rows above the note body. | Cosmetic only; reading on GitHub looks slightly odd on all 494 notes. Obsidian and the CLI are unaffected. | Switch frontmatter lists to block style (`- item` lines, already supported by the parser) in one deliberate pass, or accept it. |
 | I-18 | `imports/raw/…/README.md` collides with the root `README.md` as an Obsidian file stem. | `[[README]]` is ambiguous inside Obsidian; the validator ignores it (imports/ is excluded from the walk). | Imports must stay byte-exact, so the file is not renamed. Link the root README by path when it matters, or open `imports/` as a separate vault. |
 
 ## Deferred by decision
