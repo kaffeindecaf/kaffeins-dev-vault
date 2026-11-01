@@ -16,7 +16,7 @@ Open items only. Closed items move to [[CHANGELOG]].
 
 | # | Issue | Why it is open | Next action |
 |---|---|---|---|
-| R-04 | The repository is not initialized and public staging has not been reviewed. | Generated files and the sanitized public source manifest need a final staged-file review. | Initialize Git, inspect the staged file list and diff, then publish. |
+| R-04 | The repository is published (`github.com/kaffeindecaf/kaffeins-dev-vault`, 3 commits), but the staged diff has not had a line-by-line human review since. | Everything pushed is public; an unreviewed commit is a public mistake by definition. | Review each commit's diff before pushing; the release checks that remain are in [[RELEASE_CHECKLIST]]. |
 | R-05 | Creator names are missing from some original records. | The asset notes provide IDs and source URLs, and the extraction log does not name the source developer. | Preserve available source links; do not invent names. See [[CREDITS]]. |
 
 ## Blocked on a human in Roblox Studio
