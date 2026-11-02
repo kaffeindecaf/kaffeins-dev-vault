@@ -11,7 +11,7 @@ verification: design_only
 client_server: server
 roblox_services: [MarketplaceService, DataStoreService]
 code_blocks: 0
-related: [ "S-datastore-player-profile", "R-grow-a-tree-pattern-audit" ]
+related: [ "S-datastore-player-profile", "S-purchase-fulfillment-center" ]
 ---
 
 # Developer product fulfillment contract
@@ -19,9 +19,12 @@ related: [ "S-datastore-player-profile", "R-grow-a-tree-pattern-audit" ]
 The v1.0.0 [[S-purchase-fulfillment-center]] supplies an atomic account-store implementation of this
 contract with mock receipt tests. Choose one receipt owner; do not install both dispatchers.
 
-## Purpose and source
+## Purpose
 
-Deliver a paid product even if the player bought it outside the current UI, a server crashes, or Roblox retries a receipt. The open Grow A Tree place was read in Edit mode on 2026-11-02. `ServerScriptService.ProductPurchaseService` assigns `MarketplaceService.ProcessReceipt`, looks up the player and product, checks `Modules.DataService.HasProcessedReceipt`, grants by product, records the purchase and calls `SaveNow` before returning a decision. `DataService` has `Purchases.ProcessedReceipts` and `ReceiptOrder`; `PersistenceSession` uses a lease and UpdateAsync. These are source observations, not proof that grant and receipt are atomic or that the production system is safe. The complete grant, failure, concurrency and migration paths were not verified.
+Deliver a paid product if the player bought it outside the current UI, a server crashes, or Roblox
+retries a receipt. Persist the purchase ID and entitlement through one authoritative transaction;
+merely saving a receipt marker after a separate grant can leave a duplication or loss window. This
+contract describes the failure boundary; it does not assert that a particular game implements it.
 
 ## Adaptation
 

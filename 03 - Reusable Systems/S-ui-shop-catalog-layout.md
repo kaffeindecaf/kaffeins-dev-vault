@@ -11,14 +11,15 @@ verification: design_only
 client_server: both
 roblox_services: [TweenService]
 code_blocks: 0
-related: [ "R-ui-patterns-ui-layout-project", "S-ui-collection-card-component", "R-menu-patterns", "R-controller-focus" ]
+related: [ "S-ui-collection-card-component", "R-menu-patterns", "R-controller-focus" ]
 ---
 
 # Shop catalog with cost, benefit, and purchase feedback
 
 ## Purpose
 
-A browseable panel for in-game currency items. The main `StarterGui.KrissyUI.ShopGui` separates the shop header from `ShopList` (a `ScrollingFrame` with `UIListLayout` and `UIPadding`) and the Robux-specific `ShopRobux` list. `ShopItemTemplate` groups thumbnail, name, description, and price with a currency icon. The separate seasonal experiment uses a top bar, scroll list, bottom preview, and coin/gem totals.
+A browseable panel for in-game currency items. Separate the shop header, item list and any optional
+real-money section. Each item card can group thumbnail, name, description, price and currency icon.
 
 **Choose this layout** when the inventory is larger than a few items, the player needs to compare benefits and prices, or items have long descriptions. A small two-choice purchase can be a compact choice dialog instead. Keep real-money choices visually distinct and follow platform purchase flows.
 
@@ -35,7 +36,8 @@ ScreenGui
     └── Separate optional real-currency/Robux section
 ```
 
-The source's centered ShopGui is offset-sized around 556×366 px and has an aspect constraint. Treat that as one desktop reference size, not as a phone-ready measurement. Keep close controls reachable, reserve safe inset space, and avoid placing the cost far from its item's action.
+Use scale-aware sizing, safe insets and reachable close controls. Do not assume a desktop layout
+will fit a phone without responsive checks.
 
 ## Why this layout helps
 
@@ -61,8 +63,5 @@ Use `ui-item-card.luau` in `11 - Templates and Schemas/Luau Snippets/` to popula
 
 ## Verification
 
-The catalog hierarchy comes from Studio Edit mode. The layout recipe is a generalized pattern; the open place was not run and no purchase was performed.
-
-## Additional example: Grow A Tree
-
-`StarterGui.SeedShop.MainFrame.ScrollingFrame` has a LayoutOrder-sorted UIListLayout, padding and a card Template. Its client clones cards, assigns order, displays stock, and sends a seed key; the source comments that money and stock are server owned and waits for SeedData. Its scroll frame is wider than its parent by property, so check clipping and safe areas rather than copying dimensions. The replicated `UI.ShopTemplate` contains name, bio, stock, preview, Buy, RobuxBuy and Gift controls. Runtime, server purchase validation and product flows were not audited. See [[R-grow-a-tree-pattern-audit]] for evidence and rights limits.
+This is a reusable layout design, not a verified interface. Test the target project's viewport,
+focus, purchase integration and server-side ownership rules before use.

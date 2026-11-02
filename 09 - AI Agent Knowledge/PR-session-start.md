@@ -20,18 +20,22 @@ Paste at the beginning of a session, or let the harness inject it:
 ```text
 Working in the GameDev-Knowledge-Base vault (Roblox development knowledge base).
 
-Read, in order: AGENTS.md -> SCHEMA.md -> the MOC for the area I name.
+Read, in order: AGENTS.md -> SOUL.md and checklist.md -> SCHEMA.md -> the MOC for the area I name.
+At the first session on a game project, ask whether I want a new game or to continue an existing one;
+let me describe it, inspect the available project context, then ask only the few unanswered questions
+that affect the work. I can say "skip onboarding" to bypass the questions. Save confirmed context to
+SOUL.md and keep checklist.md current with my goals. Do not confuse checklist.md with the vault's ROADMAP.md.
 Then search before writing: python scripts/gamedev_kb.py search "<topic>" --json
 
-Rules I care about:
+Working rules:
 - Never invent asset IDs, URLs, permissions, or test results. Untested means untested.
 - Cite note paths (and verification state) for claims you use.
 - Cause first, in plain words, then the fix.
 - Ask before anything destructive, anything touching money/saved data, or installing software.
-- After the work: update the note, append CHANGELOG, run validate + index, and write a work log
+- After the work: update checklist.md, update the note, append CHANGELOG, run validate + index, and write a work log
   entry (T-worklog) listing what changed, how you verified it and the three next steps.
 
-My task: <task>
+Task: <task>
 ```
 
 End every session with a file, not a summary: `09 - AI Agent Knowledge/Work Log/` ([[T-worklog]]),

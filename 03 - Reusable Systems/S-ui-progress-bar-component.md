@@ -11,18 +11,14 @@ verification: design_only
 client_server: client
 roblox_services: [TweenService]
 code_blocks: 0
-related: [ "R-ui-patterns-ui-layout-project", "R-ui-style-guide-tokens", "R-reduced-motion-policy", "S-objective-tracker" ]
+related: [ "R-ui-style-guide-tokens", "R-reduced-motion-policy", "S-objective-tracker" ]
 ---
 
 # UI progress bar with a textual value
 
-The long-distance curry place uses a text-and-fill route display based on X position; see [[S-linear-route-progress]] for its limitations and a general segment projection adaptation.
-
-The static Pop Popcorn example binds kernel bag and finished-product counts to text and fill widths; see [[R-pop-popcorn-pattern-audit]]. Its runtime responsiveness has not been verified.
-
 ## Purpose
 
-Show progress toward a known target. The project has `ProgressBarBackground` and `ProgressFill` under `StarterGui.KrissyUI.IndexGui.ProgressBarFrame`; the index header also supplies a found count. The seasonal and main shops include purchase/completion progress structures as well.
+Show progress toward a known target, such as a collection count, objective or production cycle.
 
 **Choose this pattern** when players can act toward a finite goal and the current numerator / total is meaningful. Use an indeterminate pulse only when the duration is genuinely unknown; never imply a known amount of progress that the system cannot calculate.
 
@@ -55,4 +51,4 @@ See `ui-progress-bar.luau` in `11 - Templates and Schemas/Luau Snippets/`. It up
 
 ## Verification
 
-The hierarchy is an observed Studio instance layout; the library snippet is an untested adaptation, not the code in the project.
+The hierarchy is a reusable design suggestion; the library snippet is `Untested:` in Studio.

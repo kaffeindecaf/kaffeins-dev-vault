@@ -18,7 +18,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/ALL_ASSETS.json"
+RAW_ROOT = ROOT / "imports/raw"
 LIB = ROOT / "01 - Asset Library"
 OUT = LIB / "Indexes"
 
@@ -89,10 +89,11 @@ def table(records) -> list[str]:
 
 
 def main() -> int:
-    if not SRC.is_file():
-        print(f"fatal: missing {SRC}", file=sys.stderr)
+    sources = sorted(RAW_ROOT.rglob("ALL_ASSETS.json"))
+    if len(sources) != 1:
+        print(f"fatal: expected one ALL_ASSETS.json under {RAW_ROOT}; found {len(sources)}", file=sys.stderr)
         return 2
-    records = json.loads(SRC.read_text(encoding="utf-8"))
+    records = json.loads(sources[0].read_text(encoding="utf-8"))
     OUT.mkdir(parents=True, exist_ok=True)
 
     written = []

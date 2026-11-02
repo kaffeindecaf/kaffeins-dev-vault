@@ -12,19 +12,19 @@ source_urls: []
 
 _Generated from the same data `validate` and `report` print._
 
-- notes: **549**
+- notes: **538**
 - errors: **0** · warnings: **0** · broken wikilinks: **0**
-- references without sources: **49**
+- references without sources: **44**
 
 ## By verification
 
 | State | Notes |
 |---|---:|
-| design_only | 199 |
-| reference_only | 95 |
-| tested_local | 6 |
+| design_only | 188 |
+| reference_only | 94 |
+| tested_local | 5 |
 | tested_studio | 13 |
-| untested | 236 |
+| untested | 238 |
 
 ## Open warnings (first 40)
 

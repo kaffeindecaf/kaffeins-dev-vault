@@ -36,14 +36,14 @@ The [catalog](<11 - Templates and Schemas/Templates/T-backend-systems-catalog.md
 
 README and HOME now point directly to the backend catalog. VERSION and config/vault.json record 1.0.0; the note schema remains 2. Maps, search index and status are regenerated from the current vault. Existing notes remain available, with links from older phase, receipt and objective designs to the new implementations.
 
-No folder rename or existing-game data migration is required. The historical local folder name can remain v0.0.2. New account examples use their own isolated schema and store; do not redirect them at an existing game's profile keys. Existing receipt dispatchers and the new center are alternatives: install only one callback owner.
+No existing-game profile migration is included. New account examples use their own isolated schema and store; do not redirect them at an existing game's profile keys. Existing receipt dispatchers and the new center are alternatives: install only one callback owner.
 
 ## Evidence
 
 Studio Play: **11 cases passed, 0 failed**, including **34 mock economy fault checks** and FIFO write contention. Client smoke: **four replay checks passed**, plus a rendered telemetry panel and two quest rows. The [test report](BACKEND_SYSTEMS_TEST_REPORT.md) records the missing-end correction, final console output, screenshot, cleanup and integration gaps.
 
-Local vault verification and CLI tests are recorded in [[worklog-2026-11-02-backend-v1-release]] and [[STATUS]]. Live purchases, persistent store faults across real servers, webhook delivery, animation assets and device performance remain project tests. All assets retain their previous candidate/access status.
+Local vault verification and CLI tests are recorded in [[STATUS]] and [[BACKEND_SYSTEMS_TEST_REPORT]]. Live purchases, persistent store faults across real servers, webhook delivery, animation assets and device performance remain project tests. All assets retain their previous candidate/access status.
 
 ## Compatibility and attribution
 
-There are no new packages or framework dependencies. Original code was written from the owner's supplied Gemini feature list, using the primary contracts recorded in [[SRC-backend-platform-contracts]]. The Studio test runner follows Roblox's rbx-unit-test skill. Existing licensing and attribution remain in [[CREDITS]] and [[LICENSES_AND_SOURCES]].
+There are no new packages or framework dependencies. Original code was written from the requested feature list, using the primary contracts recorded in [[SRC-backend-platform-contracts]]. The Studio test runner follows Roblox's rbx-unit-test skill. Existing licensing and attribution remain in [[CREDITS]] and [[LICENSES_AND_SOURCES]].

@@ -13,8 +13,8 @@ related: [ "MOC-start-here", "MOC-projects", "N-SCHEMA" ]
 
 # Project vault workflow — connect game work to reusable knowledge
 
-This guide combines the project-session workflow from the Kaffeins game-vault starter with this
-vault's reusable Roblox reference library. The knowledge base remains the shared source for
+This guide combines a reusable project-session workflow with this vault's Roblox reference library.
+The knowledge base remains the shared source for
 reusable systems, asset records, references and templates. Each game's project folder remains the
 source of truth for that game's design, decisions, current state and Studio evidence.
 
@@ -54,5 +54,5 @@ Use these project templates for session continuity and decision tracking:
 - [[Tproject-OPEN_QUESTIONS]]
 - Existing structure: [[Tproject-README]], [[Tproject-HANDOFF]], [[Tproject-ROADMAP]], [[Tproject-TEST_PLAN]]
 
-The starter workflow was adapted from the local reference vault `kaffeins-dev-vault-v0.0.2`.
-Game-specific example content was not imported into the reusable library.
+The workflow is designed to keep each game's decisions, state and evidence in its own project
+folder. Game-specific example content does not belong in the reusable library.

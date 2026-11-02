@@ -16,7 +16,7 @@ related: ["T-backend-systems-catalog", "N-ISSUES"]
 
 # Backend systems test evidence — v1.0.0
 
-Tested on 2026-11-02 in the owner's connected “ai system testing” Studio session, version 0.745.0.7451137. Studio started in Edit. Tests ran in Play and the session was returned to Edit afterward. No production place scripts existed in the initial script inventory; existing scene content was preserved.
+Tested on 2026-11-02 in a connected Roblox Studio session, version 0.745.0.7451137. Studio started in Edit. Tests ran in Play and the session was returned to Edit afterward. No production place scripts existed in the initial script inventory; existing scene content was preserved.
 
 ## Server result
 

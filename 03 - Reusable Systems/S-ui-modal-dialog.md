@@ -11,14 +11,16 @@ verification: design_only
 client_server: client
 roblox_services: [TweenService, GuiService]
 code_blocks: 0
-related: [ "R-ui-patterns-ui-layout-project", "R-menu-patterns", "R-controller-focus", "R-reduced-motion-policy" ]
+related: [ "R-menu-patterns", "R-controller-focus", "R-reduced-motion-policy" ]
 ---
 
 # Centered modal with clear open and close behaviour
 
 ## Purpose
 
-Give a finite task focused attention while preserving a visible exit. The project's Index and Shop panels are centered with `AnchorPoint = (0.5, 0.5)`, scale position `(0.5, 0.5)`, aspect constraints, and separate close buttons. Its UI controller also coordinates the HUD, an optional overlay, blur, sound, and modal tweens.
+Give a finite task focused attention while preserving a visible exit. Center the panel where suitable,
+keep a clear close action, and coordinate backdrop, focus, optional sound and motion through one UI
+controller.
 
 **Choose a modal** for a focused task that should temporarily pause access to the rest of the HUD, such as inventory, collection, or a settings page. Use a toast for brief feedback, a tooltip for optional detail, or a docked panel if players must keep watching the world.
 
@@ -54,4 +56,5 @@ See `ui-modal.luau` in `11 - Templates and Schemas/Luau Snippets/` for an open/c
 
 ## Verification
 
-The modal placement and constraint evidence is read from the place in Studio Edit mode. The snippet is adapted, `Untested:` in Roblox Studio, and does not reproduce the source controller's complete state logic.
+The snippet is a reusable proposal, `Untested:` in Roblox Studio, and does not replace a complete UI
+state controller.

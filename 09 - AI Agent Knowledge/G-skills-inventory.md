@@ -35,26 +35,25 @@ Obsidian graph bridges connect runtime skills to concrete notes: [[G-skill-roblo
 the persistence skill to recipes, while [[G-skill-roblox-mcp-workflow]] links Studio work to the
 asset-verification process. The bridge notes do not duplicate the harness skill files.
 
-These four were derived on 2026-11-01 from five game-specific skills, with the game's names, ids and economy
-stripped out. See [[G-extraction-log]] for the code side of the same session.
+These universal skills were generalized from project-specific workflows after removing game names,
+identifiers and economy details. See [[G-extraction-log]] for the code-generalization method.
 
-## Game-specific skills (kept, because they carry real state)
+## Project-specific skills
 
-The original `housebreaking-*` skills still exist and still contain facts that are true only for that game:
-place ids, the economy's numbers, which scripts own which store, and a change log. **Do not merge them into the
-universal skills** — a universal skill that knows one game's place ids is not universal, and it goes stale in a
-way that is invisible until someone trusts it.
+Project-specific skills can contain facts that are true only for one game: place identifiers, economy
+values, script ownership and current changes. Keep them with that game's own files. **Do not merge
+those facts into universal skills**; they become stale and can be mistaken for platform-wide guidance.
 
 Rule of thumb:
 
 - A lesson that would help a *different* game → belongs in a universal skill (fix it there, in one place).
-- A fact about *this* game (id, folder, key, knob value) → belongs in that game's skill or its vault.
+- A fact about one game (id, folder, key, configuration value) → belongs in that game's skill or vault.
 
 ## How an agent should use both
 
 1. Load the universal skill for the task shape (`roblox-core-loop` before touching a round loop).
 2. Search the vault for the specific recipe or reference (`MOC-reusable-systems`).
-3. Only then look at game-specific skills for the actual ids and current state.
+3. Only then look at the selected project's own skills and files for its current identifiers and state.
 
 ## Keeping them honest
 

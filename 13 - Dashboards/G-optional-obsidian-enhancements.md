@@ -24,7 +24,7 @@ dashboards are generated files, not queries. This page exists so you can opt in 
 | **Dataview** | dynamic lists/queries (`TABLE type FROM ...`) | community plugin; queries live in notes and can hide errors | Optional, after the schema stabilises |
 | **Templater** | templating with JS expressions | community plugin; runs code in the vault | Optional; the `Tpl-*` files work with the core Templates plugin |
 | **Excalidraw** | hand-drawn diagrams | community plugin; `.excalidraw` files are not portable text | Optional; ASCII/Mermaid wireframes are in `G-ui-wireframe-template` |
-| **Obsidian Git** | automatic commits/sync | community plugin + a git repo; OneDrive already versions the folder | Not recommended while the vault lives in OneDrive (conflict risk) |
+| **Obsidian Git** | automatic commits/sync | community plugin + a git repo; a separate sync or backup service may already version the folder | Avoid overlapping sync tools that can create conflicts |
 
 ## If you enable Dataview later
 

@@ -39,6 +39,5 @@ commands that really ran.
 
 ## Where the game-specific truth lives
 
-This vault is **reusable knowledge**. For the actual Housebreaking/krissy. projects the source of
-truth is the game vault and the Studio place, not this folder. Keep the boundary: portable recipe
-here, project-specific fact there.
+This vault is **reusable knowledge**. For any game project, use that project's own files and Studio
+place as the source of truth. Keep the boundary: portable recipe here, project-specific facts there.

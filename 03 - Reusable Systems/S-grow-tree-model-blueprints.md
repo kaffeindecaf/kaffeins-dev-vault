@@ -11,16 +11,19 @@ verification: design_only
 client_server: both
 roblox_services: [ServerStorage, ReplicatedStorage]
 code_blocks: 0
-related: [ "R-grow-a-tree-pattern-audit", "S-tree-query-hitbox", "S-ui-shop-catalog-layout" ]
+related: [ "T-garden-integration-patterns", "S-tree-query-hitbox", "S-ui-shop-catalog-layout" ]
 ---
 
 # Tree model variants and preview blueprints
 
-## Source and intent
+## Intent
 
-In the open Grow A Tree place, `ServerStorage.New Growth Trees.AppleTree` contains `Variation1`, `Variation2` and `Variation3` Models. Other species use similar groupings; `CorruptedTree` differs. `ReplicatedStorage.SeedShopPreviewModels`, `SeedPreviewModels` and `TreeIndexModels` are separate model folders. These are observed structures, not proof of which variants spawn or how previews are loaded. No original models were exported; ownership and rights are unknown.
-
-For a reusable model library, use stable species and variant keys in a server-owned catalog, a consistent root/pivot and documented ground plane; keep visual variants interchangeable with the same gameplay contract. A client-facing preview can be a separate lightweight representation. `tree-model-placeholder.luau` creates an intentionally simple original placeholder model from configurable primitive sizes and colors; it is not the source game's art. `shop-stand-placeholder.luau` similarly builds an original shop blockout inspired by the existence of `Workspace.SeedShop` and `Workspace.UpgradeShop`, not their geometry. Neither contains an asset ID or extracts geometry. See [[T-grow-tree-snippet-catalog]].
+For a reusable model library, use stable species and variant keys in a server-owned catalog, a
+consistent root/pivot and documented ground plane; keep visual variants interchangeable with the
+same gameplay contract. A client-facing preview can be a separate lightweight representation.
+`tree-model-placeholder.luau` creates an original placeholder from configurable primitive sizes and
+colors. `shop-stand-placeholder.luau` builds an original shop blockout. Neither contains an asset ID
+or extracts existing geometry. See [[T-garden-integration-patterns]].
 
 ## Assembly and tradeoffs
 
@@ -29,4 +32,6 @@ For a reusable model library, use stable species and variant keys in a server-ow
 3. Document pivot, ground origin, collision, tags, attributes, and growth transitions for every variant. Test rotations and extreme size rolls. The tree placeholder initially puts its bottom at world origin, uses its trunk center as the PrimaryPart pivot, and has anchored, non-colliding primitives. The stand's PrimaryPart pivot is its base center and its parts retain default collision.
 4. Audit instance count, streaming, material/mesh memory, preview rendering and device performance with measurements. Color, silhouettes and names should remain distinguishable; motion and flashing effects need accessible alternatives.
 
-**Unverified:** the source models' full part structure, pivots, creator permissions, package identity, runtime selection, and all appearance/performance outcomes. No source model may be represented as a reusable licensed asset solely because it appears in the place.
+**Unverified:** model structure, pivots, creator permissions, runtime selection, and appearance or
+performance outcomes for any project-specific models. Do not represent a model as reusable or
+licensed solely because it appears in a project.

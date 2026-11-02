@@ -3,7 +3,7 @@ id: N-AGENTS
 type: guide
 title: AGENTS — the contract for AI agents working in this vault
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [agents, rules, safety]
 source_urls: []
 ---
@@ -19,6 +19,9 @@ it is not a place where game code runs.
   user explicitly asks in that message.
 - `imports/raw/**` is **read-only**: it is the research record, byte-exact and hashed
   (`imports/raw/SOURCE_MANIFEST.json`). Never "clean it up".
+- Keep project-specific audits, game/place identifiers, private paths and owner-specific work logs
+  out of shared notes. Private records belong only in the local, ignored `.private-project-notes/`
+  archive; generalize reusable patterns before adding them to the distributable vault.
 - The public tree omits the local raw manifest because it contains a machine-specific path; see
   `imports/SOURCE_MANIFEST_PUBLIC.json` for the sanitized hash record.
 - Never edit `.obsidian/` without explicit approval.
@@ -29,10 +32,12 @@ it is not a place where game code runs.
 
 ## 2. Read before you write
 
-1. [[SCHEMA]] — required frontmatter, IDs, controlled values.
-2. The MOC for the area you are touching ([[MOC-start-here]] lists them).
-3. `python scripts/gamedev_kb.py search "<topic>"` — do not re-invent what is already documented.
-4. If the topic is specific to a game project, that project's vault is the source of truth, not this one.
+1. [[SOUL]] and [[checklist]] — project onboarding, persistent context and the user's active goals.
+   Follow the opening flow when a game project is new or unconfirmed; honor the skip option.
+2. [[SCHEMA]] — required frontmatter, IDs, controlled values.
+3. The MOC for the area you are touching ([[MOC-start-here]] lists them).
+4. `python scripts/gamedev_kb.py search "<topic>"` — do not re-invent what is already documented.
+5. If the topic is specific to a game project, that project's vault is the source of truth, not this one.
 
 ## 3. Truth rules (the part that actually matters)
 
@@ -65,6 +70,8 @@ confirmed it.
 
 ## 6. When you finish
 
+- Keep `checklist.md` current: add and update user goals as work changes, preserve unfinished goals,
+  and record completion only when the outcome is delivered.
 - Update the note you changed, append to [[CHANGELOG]], and record anything unresolved in [[ISSUES]].
 - Re-run `python scripts/gamedev_kb.py validate` and `index`; paste the real output.
 - Report: what changed, what you verified and how, what is still open. No adjectives.

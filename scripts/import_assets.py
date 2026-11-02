@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """import_assets.py — non-destructive import of the researched Roblox asset collection.
 
-Reads   imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/ALL_ASSETS.json
+Reads   the unique ALL_ASSETS.json file under imports/raw/
 Writes  one note per distinct asset_id under '01 - Asset Library/<Type>/asset-<id>.md'
 Reads   the CSV too, purely to cross-check the JSON (the JSON is the source of truth).
 
@@ -25,7 +25,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC_DIR = ROOT / "imports" / "raw" / "Roblox_Horror_Asset_Vault_2026-11-01" / "Roblox_Horror_Asset_Vault"
+RAW_ROOT = ROOT / "imports" / "raw"
 ASSET_LIB = ROOT / "01 - Asset Library"
 EXPECTED_REFERENCE_COUNT = 206  # from the source README; a reference, never a target
 
@@ -60,11 +60,12 @@ def sha(text: str) -> str:
 
 
 def load_source():
-    j = SRC_DIR / "ALL_ASSETS.json"
-    c = SRC_DIR / "ALL_ASSETS.csv"
-    if not j.is_file():
-        print(f"fatal: missing {j}", file=sys.stderr)
+    sources = sorted(RAW_ROOT.rglob("ALL_ASSETS.json"))
+    if len(sources) != 1:
+        print(f"fatal: expected one ALL_ASSETS.json under {RAW_ROOT}; found {len(sources)}", file=sys.stderr)
         raise SystemExit(2)
+    j = sources[0]
+    c = j.with_suffix(".csv")
     records = json.loads(j.read_text(encoding="utf-8"))
     csv_rows = {}
     if c.is_file():
@@ -164,7 +165,7 @@ Verbatim source row — do not edit this block; it is the research record.
 {json.dumps(rec, indent=2, ensure_ascii=False)}
 ```
 
-Source file: `imports/raw/Roblox_Horror_Asset_Vault_2026-11-01/Roblox_Horror_Asset_Vault/ALL_ASSETS.json`
+Source file: byte-exact import under `imports/raw/` (see `imports/SOURCE_MANIFEST_PUBLIC.json` for sanitized provenance).
 Import: `scripts/import_assets.py` (idempotent; a human edit makes this note immune to regeneration).
 
 Related: [[MOC-asset-library]] · working: [[G-asset-verification-workflow]]

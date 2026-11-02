@@ -3,7 +3,7 @@ id: N-DECISIONS
 type: decision
 title: DECISIONS — architecture decision record
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [decisions, architecture]
 source_urls: []
 ---
@@ -70,34 +70,6 @@ One entry per decision that would be expensive to reverse. Newest first.
   break the "works in a plain Markdown viewer" requirement. All dashboards are generated static
   Markdown, so they refresh with `python scripts/gamedev_kb.py report --write-dashboards`.
 
-## D-0008 — Keep the active knowledge base canonical and version the fused source package
-
-- **Date:** 2026-11-01
-- **Decision:** Keep `GameDev-Knowledge-Base` as the active destination, fuse reusable game-vault
-  workflow material into its project templates and graph, and rename the source package to
-  `kaffeins-dev-vault-v0.0.2`.
-- **Why:** the active knowledge base already contains the schema, retrieval CLI, 206 imported asset
-  records and reusable Roblox libraries. A second full copy would split updates and duplicate the
-  same source records.
-- **Consequence:** the original source package remains available under its new versioned name;
-  project-specific facts stay in the game's own project notes, and imported raw asset records remain
-  unchanged.
-
-## D-0009 — Place the active knowledge vault inside the versioned Kaffeins folder
-
-- **Date:** 2026-11-01
-- **Decision:** Move the complete `GameDev-Knowledge-Base` folder into
-  `kaffeins-dev-vault-v0.0.2`, preserving the nested vault name and its contents.
-- **Why:** the owner requested a single parent location for the merged game-development vault.
-- **Consequence:** the vault is nested under its versioned parent folder. The active root is the
-  `GameDev-Knowledge-Base` directory; material outside it remains outside the writable root.
-
-**Update 2026-11-01 (later the same day):** the nested directory was renamed to
-`kaffeins-vault-v0.0.2`, so the active root is now
-`Desktop/kaffeins-dev-vault-v0.0.2/kaffeins-vault-v0.0.2`. The decision itself is unchanged: one
-active vault, inside the versioned parent. Recorded in
-[[worklog-2026-11-01-worklog-templates]] because the earlier path is now wrong everywhere it is quoted.
-
 ## D-0010 — Agent work logs are a first-class note type
 
 - **Date:** 2026-11-01
@@ -112,3 +84,14 @@ active vault, inside the versioned parent. Recorded in
   (`search --type worklog`). Work logs stay `draft` and are never a home for knowledge — a reusable
   fact still has to land in a library note with its own verification label. Protocol:
   [[G-worklog-protocol]].
+
+## D-0011 — Keep project-specific audits out of the shared download
+
+- **Date:** 2026-11-02
+- **Decision:** Keep the downloadable knowledge base focused on generalized guidance. Preserve
+  private project audits and work logs only in the local-only ignored archive.
+- **Why:** named games, place identifiers, asset values and owner-specific history can confuse
+  readers and expose project details that are not needed to use the shared recipes.
+- **Consequence:** source-derived reusable patterns must remove project names, exact identifiers and
+  private hierarchy details. The local archive is excluded from indexing and repository downloads;
+  previously published history and release files require a separate release review.

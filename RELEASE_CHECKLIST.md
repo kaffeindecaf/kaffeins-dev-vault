@@ -3,7 +3,7 @@ id: N-RELEASE-CHECKLIST
 type: guide
 title: Public release checklist
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [release, github, provenance, review]
 source_urls: []
 ---
@@ -17,14 +17,15 @@ source_urls: []
 - [x] Recorded 11 passing Studio cases, 34 economy fault checks, FIFO contention, client replay checks and preview.
 - [x] Removed temporary Studio test roots and returned the session to Edit.
 - [x] Ran vault validation, index regeneration and the CLI suite; exact final output is in
-  [[worklog-2026-11-02-backend-v1-release]].
+  [[STATUS]] and [[BACKEND_SYSTEMS_TEST_REPORT]].
 - [ ] Maintainer publication review and any remote tag/release.
 
 Local content preparation is separate from a GitHub publication. See [[RELEASE-v1.0.0]].
 
 ## Earlier repository publication record — 2026-11-01
 
-The maintainer confirmed permission to redistribute the imported research and adapted notes. This checklist records the remaining repository-preparation steps and the attribution details that were not present in the source files.
+Redistribution permissions for imported research and adapted notes are recorded here. This checklist
+also tracks provenance and privacy checks before a public release.
 
 ## Before making a repository public
 
@@ -34,14 +35,13 @@ The maintainer confirmed permission to redistribute the imported research and ad
 - [x] Kept the byte-exact raw files unchanged and created `imports/SOURCE_MANIFEST_PUBLIC.json`, which omits the local path embedded in the private raw manifest.
 - [x] Confirmed `.obsidian/` contains no files.
 - [x] Added `.gitignore` rules for the local index, exports, scratch imports, credentials, and editor noise.
-- [ ] Audit notes and fixtures for any other personal information, private project details, or credentials.
+- [x] Audited the current distributable tree for named game projects, place IDs, personal paths and owner-specific notes; moved source audits and work logs into a local-only ignored archive and generalized reusable patterns.
+- [ ] Replace earlier public release archives after maintainer review. Previously published Git history may still contain removed project details.
 - [ ] Review external links and hosted diagrams for availability.
 - [x] Confirmed the README's counts and command examples against the release tree (494 notes, CLI commands run).
-- [x] Created the Git history and inspected the staged list before publishing: `a907afc` (initial),
-  `13f1080` (agent work-log templates), pushed to `github.com/kaffeindecaf/kaffeins-dev-vault`.
+- [x] Created the Git history and inspected the staged list before the initial publication.
 - [x] Ran `validate` (502 notes, 0 errors, 0 warnings), `index` (502 notes, fts5, stable fingerprint) and
-  `python -m unittest discover -s tests` (31 tests, OK); output recorded in [[TEST_REPORT]] and
-  [[worklog-2026-11-01-worklog-templates]].
+  `python -m unittest discover -s tests` (31 tests, OK); output recorded in [[TEST_REPORT]].
 - [ ] Have a maintainer review this checklist and approve the release contents.
 
 ## Remaining checks

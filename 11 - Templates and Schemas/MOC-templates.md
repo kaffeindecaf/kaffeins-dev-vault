@@ -36,15 +36,14 @@ re-run the script after adding notes._
 | `Templates/` [[T-backend-systems-catalog]] | template | tested_studio | Backend systems catalog and integration guide — v1.0.0 |
 | `Templates/` [[T-bug]] | template | design_only | Template — bug with reproduction and verified fix |
 | `Templates/` [[T-community-practical-snippets]] | template | untested | Practical lifecycle, request and zone snippets |
-| `Templates/` [[T-curry-delivery-patterns]] | template | untested | Curry delivery inspired integration catalog |
 | `Templates/` [[T-decision]] | template | design_only | Template — architecture decision record |
-| `Templates/` [[T-drive-catch-patterns]] | template | untested | Drive and Catch inspired integration catalog |
 | `Templates/` [[T-experiment]] | template | design_only | Template — experiment |
-| `Templates/` [[T-grow-tree-snippet-catalog]] | template | untested | Grow A Tree inspired integration snippet catalog |
+| `Templates/` [[T-garden-integration-patterns]] | template | untested | Garden and shop integration catalog |
 | `Templates/` [[T-handoff]] | template | design_only | Template — handoff brief for the next agent |
 | `Templates/` [[T-horror]] | template | design_only | Template — horror direction / pacing pattern |
+| `Templates/` [[T-linear-route-patterns]] | template | untested | Linear route integration catalog |
 | `Templates/` [[T-module]] | template | design_only | Template — Luau module and API contract |
-| `Templates/` [[T-pop-popcorn-patterns]] | template | untested | Pop Popcorn inspired integration catalog |
+| `Templates/` [[T-plot-production-patterns]] | template | untested | Plot-based production integration catalog |
 | `Templates/` [[T-project]] | template | design_only | Template — project workspace README |
 | `Templates/` [[T-prompt]] | template | design_only | Template — agent prompt |
 | `Templates/` [[T-reference]] | template | design_only | Template — Roblox service / API reference note |
@@ -55,6 +54,7 @@ re-run the script after adding notes._
 | `Templates/` [[T-system]] | template | design_only | Template — gameplay mechanic recipe |
 | `Templates/` [[T-ui-pattern]] | template | design_only | Template — reusable UI pattern with provenance |
 | `Templates/` [[T-ui]] | template | design_only | Template — UI component with accessibility checks |
+| `Templates/` [[T-vehicle-progression-patterns]] | template | untested | Vehicle and progression integration catalog |
 | `Templates/` [[T-vfx]] | template | design_only | Template — VFX / lighting recipe with a performance budget |
 | `Templates/` [[T-worklog]] | template | design_only | Template — agent work log entry |
 

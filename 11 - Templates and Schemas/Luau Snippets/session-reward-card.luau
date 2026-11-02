@@ -1,4 +1,4 @@
--- Untested: presentation-only adaptation inspired by Grow A Tree's reward grid.
+-- Untested: presentation-only session reward card template.
 -- Supply a GuiButton with TextLabel children named Reward and Timer.
 -- OnClaim is an intent callback; eligibility and grants belong to the server.
 local Config = {

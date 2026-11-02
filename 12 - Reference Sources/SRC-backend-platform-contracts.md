@@ -14,7 +14,7 @@ related: ["T-backend-systems-catalog"]
 
 # Backend system platform contracts
 
-Primary pages opened on 2026-11-02 while implementing [[T-backend-systems-catalog]]. This records documentation evidence separately from runtime evidence in [[BACKEND_SYSTEMS_TEST_REPORT]]. The owner's supplied Gemini list supplied feature ideas, not executable code or authoritative API guarantees.
+Primary pages opened on 2026-11-02 while implementing [[T-backend-systems-catalog]]. This records documentation evidence separately from runtime evidence in [[BACKEND_SYSTEMS_TEST_REPORT]]. The requested feature list supplied ideas, not executable code or authoritative API guarantees.
 
 | Primary source | Relevant contract |
 |---|---|

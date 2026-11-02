@@ -11,16 +11,20 @@ verification: design_only
 client_server: both
 roblox_services: [ReplicatedStorage, Players]
 code_blocks: 0
-related: [ "R-grow-a-tree-pattern-audit", "S-objective-tracker", "S-ui-collection-card-component" ]
+related: [ "S-objective-tracker", "S-ui-collection-card-component" ]
 ---
 
 # Session reward grid with server-owned claims
 
-Show a finite sequence of time-based rewards, the next wait, and an explicit claim state. Choose a grid for a small set of comparable rewards; a scrolling list is better when labels or the number of rewards vary widely. This is an adaptation of the static observations in [[R-grow-a-tree-pattern-audit]], not copied game code.
+Show a finite sequence of time-based rewards, the next wait, and an explicit claim state. Choose a
+grid for a small set of comparable rewards; a scrolling list is better when labels or the number of
+rewards vary widely.
 
 ## Evidence and contract
 
-`StarterGui.PlaytimeRewards.MainFrame.RewardGrid` uses a LayoutOrder-sorted UIGridLayout and `Reward1` through `Reward6`; its controller renders countdown, READY! or CLAIMED, a claimed count and next-reward timer. `ServerScriptService.PlaytimeRewardServiceV2` holds the six thresholds and rewards, tracks session start and claims per player, validates index and elapsed time, and uses a per-player lock. It clears session state on PlayerRemoving. The client estimates elapsed time each second and invokes a claim; the server response replaces the displayed snapshot. This is session state, not proof that claim markers persist across sessions. Grant calls and asynchronous saves were read, but their failure and durability semantics were not verified.
+Use stable reward keys, a server-owned schedule and eligibility check, and explicit ready/claimed
+states. Treat client timers as display hints only. Session tracking does not prove that claim markers
+persist across sessions; grant and save failures need their own recovery design.
 
 For a reusable design, use stable reward keys, not array indices, for persisted claims. The server derives eligibility and reward from its own configuration, enforces request limits and serializes concurrent claims. Define failure and retry semantics with the persistence system; do not claim exactly-once durability without an atomic/idempotent grant protocol. The client renders snapshots and sends only an intent; local time is a hint. `session-reward-card.luau` is an **untested** presentation-only template; integrate it with an existing trusted server contract.
 

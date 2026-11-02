@@ -11,14 +11,15 @@ verification: design_only
 client_server: client
 roblox_services: [UserInputService]
 code_blocks: 0
-related: [ "R-ui-patterns-ui-layout-project", "R-ui-style-guide-tokens", "R-controller-focus", "R-responsive-matrix" ]
+related: [ "R-ui-style-guide-tokens", "R-controller-focus", "R-responsive-matrix" ]
 ---
 
 # Accessible UI slider for bounded settings
 
 ## Purpose
 
-A track and thumb for choosing a value within a meaningful range, such as music volume, camera sensitivity, or field of view. I did not find an existing slider in the inspected place; this is a new reusable component added because it is a common settings control, not an extracted project widget.
+A track and thumb for choosing a value within a meaningful range, such as music volume, camera
+sensitivity, or field of view. This is an original reusable component proposal.
 
 **Choose a slider** when the player needs to choose among many ordered values and immediate feedback is helpful. Choose discrete buttons, a dropdown, or a toggle when the values are few or exact values matter. Pair the slider with a visible value and accessible increment/decrement controls for gamepad or keyboard.
 
@@ -56,4 +57,5 @@ See `ui-slider.luau` in `11 - Templates and Schemas/Luau Snippets/`. It binds mo
 
 ## Verification
 
-This is a library proposal without a slider in the source project's Explorer. The snippet is `Untested:` in Studio and needs pointer, touch, keyboard, and gamepad verification before reuse.
+The snippet is `Untested:` in Studio and needs pointer, touch, keyboard, and gamepad verification
+before reuse.

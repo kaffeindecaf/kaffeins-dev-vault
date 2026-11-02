@@ -15,7 +15,7 @@ related: ["SRC-backend-platform-contracts", "N-BACKEND-SYSTEMS-TEST-REPORT"]
 
 # Backend systems catalog — v1.0.0
 
-Ten original framework-independent systems based on the owner's supplied Gemini idea list. They use small constructor-based ModuleScripts and explicit dependencies; Knit, Matter, Janitor and ProfileStore are optional project choices, not required packages. The code is a reusable starting point with scoped Studio evidence, not a claim of production certification.
+Ten original framework-independent systems based on a requested feature list. They use small constructor-based ModuleScripts and explicit dependencies; Knit, Matter, Janitor and ProfileStore are optional project choices, not required packages. The code is a reusable starting point with scoped Studio evidence, not a claim of production certification.
 
 ## Choose a system
 

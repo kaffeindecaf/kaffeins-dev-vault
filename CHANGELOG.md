@@ -10,6 +10,22 @@ source_urls: []
 
 # CHANGELOG
 
+## 2026-11-02 — Remove project-specific content from the shared tree
+
+- Moved detailed source audits and owner-specific work logs to a local-only ignored archive.
+- Removed project names, place IDs, personal paths and source-hierarchy details from the shared
+  notes and generated asset provenance; rewrote reusable patterns and templates in project-neutral terms.
+- Regenerated navigation and dashboards. Earlier public commits and release archives still need
+  separate review before they can be replaced; see [[ISSUES]] R-06.
+
+## 2026-11-02 — Project onboarding and user goal checklist
+
+- Added [[SOUL]] with a first-project flow for choosing a new or existing game, describing it,
+  reviewing known context, asking only material follow-up questions, saving confirmed decisions,
+  and skipping the interview when requested.
+- Added [[checklist]] as a user-goal ledger separate from the vault's [[ROADMAP]], and wired both
+  files into [[AGENTS]], the session-start prompt, and [[HOME]].
+
 ## v1.0.0 — 2026-11-02 — Reusable backend systems
 
 - Added all ten requested systems as original ModuleScripts: integrity/shadow guard, cross-server
@@ -27,7 +43,7 @@ source_urls: []
 - Corrected the older MemoryStore/MessagingService reference and source record: message delivery
   is best effort, not guaranteed at least once; a lease alone cannot fence stale profile saves.
 - Rebuilt maps/index and ran local validation/CLI tests; exact output, including the initial
-  missing release-note link, is in [[worklog-2026-11-02-backend-v1-release]].
+  missing release-note link, is recorded in the local release verification report.
 - Temporary Studio roots and preview instances were removed and the session returned to Edit.
   Live persistence/purchases/webhooks and the remaining integration checks are tracked as I-31–I-33.
 
@@ -39,36 +55,12 @@ Added original, untested cleanup scope, request token bucket and zone membership
 
 Added a sourced overview of discovery lists, Knit, Janitor, Maid, ProfileStore, ReplicaService, Replica, ZonePlus, Blink and ByteNet, with adoption and verification caveats.
 
-## 2026-11-02 — Curry delivery static patterns
+## 2026-11-02 — Reusable game patterns and UI components
 
-Added a source-scoped audit, route progress and world-space menu recipes, four untested helpers or primitive blockouts, and documented discriminatory kick logic, delivery mismatches and review work. Studio was read only.
-
-## 2026-11-02 — Pop Popcorn static patterns
-
-Added a source-scoped overview, bounded production and plot deposit recipes, and four untested arithmetic, layout and primitive model templates. Recorded asset identifiers, receipt concurrency and interrupted-production review work. Studio was read only.
-
-## 2026-11-02 — Drive and Catch static patterns
-
-Added a source-scoped audit, collectible preview, safe-zone timer and sequential-gate recipes, plus four untested reusable helpers and a primitive vehicle blockout. Documented receipt and persistence failure paths, asset rights limits and further device/runtime work. Studio was read only.
-
-## 2026-11-02 — Grow A Tree integration templates
-
-Added seven untested adapters and original blockout builders for profile updates, receipts, sprint, settings, notifications, trees and a shop stand. Added receipt and model blueprints, settings/movement observations, an integration template and snippet catalog; expanded existing persistence and sprint recipes. Source-place scripts were read only.
-
-## 2026-11-02 — Grow A Tree static pattern audit
-
-Added a source-scoped overview, session reward and tree query-hitbox recipes, an untested reward-card presentation snippet, and a shop example. Recorded incomplete coverage, runtime/device checks and asset rights as follow-up work. The place was read in Edit mode only.
-
-## 2026-11-02 — UI pattern extraction and component snippets
-
-- Read the `ui layout` place's Explorer in Studio Edit mode and added [[R-ui-patterns-from-ui-layout-project]]
-  with the collectible HUD, index, shop, popups, Workspace-staged experiments, and observed image/sound IDs.
-- Added button, slider, progress bar, collection card, shop catalog, modal, and horror-overlay recipes.
-  Their notes explain the use case, layout and constraints, why the pattern helps, and review requirements.
-- Added [[T-ui-pattern]] and fill-in Luau modules in `11 - Templates and Schemas/Luau Snippets/` for
-  button, slider, progress bar, item card, and modal behavior. All adapted scripts remain `Untested:`.
-- Added Phase 21 to [[ROADMAP]]. Runtime screenshots, device checks, controller review, asset access,
-  and asset rights remain open; see [[ISSUES]].
+Added generalized route, plot-production, vehicle-progression, garden, session-reward, hitbox and UI
+patterns with original `Untested:` helpers. Project-specific source audits, identifiers and session
+logs are kept in a local-only archive and are excluded from the downloadable tree. The shared notes
+contain reusable guidance and state their remaining verification needs.
 
 ## 2026-11-01 — Agent work log templates (schema v2)
 
@@ -78,18 +70,11 @@ Added a source-scoped overview, session reward and tree query-hitbox recipes, an
   three next steps; unfinished work also gets a handoff brief.
 - Added `worklog` to the controlled note types and `WL` to the ID prefixes; `schema_version` is now 2.
   Recorded as D-0010 in [[DECISIONS]].
-- First entry, `worklog-2026-11-01-worklog-templates`, records this session and doubles as the worked
-  example.
 - Wired the protocol into [[README]] (contributing and folder map), [[NEXT_STEPS]] (new step 0),
   [[SCHEMA]] (§11), the session-start prompt, and the generated maps; the MOC intro strings no longer
   hardcode a template count.
-- Corrected the stale vault path in D-0009 after the folder was renamed to `kaffeins-vault-v0.0.2`.
-- `AGENTS.md` still says nothing about the work log: the edit was refused by the write guard and is
-  open as I-25 in [[ISSUES]].
-- Verified: `validate` 0 errors, `index` rebuilt, 31 tests OK, 11 maps regenerated. Pushed to
-  `kaffeins/@kaffeins-dev-vault` on GitHub; the rendered repository was checked in a browser.
-- Published release `v0.0.2` on the GitHub Releases tab: `kaffeins-dev-vault-v0.0.2.zip` (source
-  snapshot of commit `9f168e3`, 925 KB, SHA-256 `3cd06266…88e434`), marked pre-release.
+- Verified the schema, validator, index and generated maps; exact current checks are recorded in
+  the release and status reports.
 
 ## 2026-11-01 — GitHub release preparation
 
@@ -100,7 +85,7 @@ Added a source-scoped overview, session reward and tree query-hitbox recipes, an
 - Removed machine-specific filesystem details from the public-facing project and status notes.
 - Recorded unresolved provenance, asset-rights, and license questions in [[ISSUES]] and
   [[RELEASE_CHECKLIST]]. The vault is still a working copy, not cleared for public release.
-- Ran local validation and rebuilt the search index after these edits; see the session wrap-up output.
+- Ran local validation and rebuilt the search index after these edits; current counts are recorded in [[STATUS]].
 
 ## 2026-11-01 — V1 build
 
@@ -165,10 +150,10 @@ Added a source-scoped overview, session reward and tree query-hitbox recipes, an
 - No Roblox Studio test, no audio playback, no model inspection, no plugin install, no publish.
 - No embeddings/MCP server (roadmap P19 stays unbuilt until lexical search is proven insufficient).
 
-## 2026-11-01 — Vault fusion and research additions
+## 2026-11-01 — Project workflow and research additions
 
-- Kept `GameDev-Knowledge-Base` as the active destination and renamed the source package folder to
-  `kaffeins-dev-vault-v0.0.2` at the owner's request. No `.obsidian/` settings were edited.
+- Added a reusable project-session workflow and templates to connect game-specific source-of-truth
+  files with this shared knowledge base. No `.obsidian/` settings were edited.
 - Added [[G-game-vault-integration]] and four project templates for session start, working rules,
   timeline and open questions. The guidance keeps project-specific facts in each game's own source
   of truth and promotes only generalized patterns to the shared libraries.
@@ -186,12 +171,3 @@ Added a source-scoped overview, session reward and tree query-hitbox recipes, an
 - Validation/index output is recorded in [[STATUS]] after the final run; no new automated or Roblox
   Studio tests were run.
 
-## 2026-11-01 — Move active vault into the versioned Kaffeins folder
-
-- Moved the complete vault into `kaffeins-dev-vault-v0.0.2/GameDev-Knowledge-Base`.
-- Verified all 524 files against the source copy by relative path and SHA-256 before removing source
-  contents: 0 missing, 0 extra and 0 mismatches.
-- The old top-level directory is empty. Windows prevented removal of that directory entry because a
-  process still holds it; see [[ISSUES]] I-24.
-- Updated the operational vault path in [[README]], [[PROJECT_CONFIG]], [[STATUS]] and [[AGENTS]],
-  and recorded the move in [[DECISIONS]] D-0009.

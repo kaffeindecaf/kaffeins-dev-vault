@@ -15,8 +15,9 @@ related: "R-server-authority-replication", "R-ai-debug-overlay", "R-logging-and-
 
 # Chat commands
 
-Faster to use, cheaper to build, easier to leave in a build than a panel. (Also matches the owner's stated
-preference: functionality first, styling later.)
+For small development teams, chat commands can be faster to build than a dedicated panel. For
+larger teams, frequently used operations, or tools needing discoverability, a permission-gated panel
+may be easier to maintain.
 
 ## Shape
 

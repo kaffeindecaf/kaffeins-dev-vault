@@ -18,31 +18,13 @@ source_urls: []
 
 - [[R-community-libraries]] is research only: verify selected versions, licensing, compatibility and behavior in Studio before adoption. The supplied ProfileStore Creator Store listing could not be read by the research browser; its availability and access remain unchecked.
 
-## Curry delivery audit follow-up (2026-11-02)
+## Reusable pattern verification follow-up (2026-11-02)
 
-- `ServerScriptService.anti theft script` attempts to kick players based on skin-color brightness; its `Humanoid.SkinColor` access was not tested. Remove the discriminatory restriction after owner review; this vault session did not alter the place.
-- DeliveryHandler references a missing `ReplicatedStorage.RemoteEvents` folder; DeliveryReset uses an undefined table, while each touch handler has an independent local table and does not require a bowl. Confirm behavior in a safe test and design server-authoritative completion.
-- The initial character root is retained by the progress script, and the source menu uses fixed dimensions and camera motion. Test respawn, keyboard, touch, gamepad, reduced motion and responsive layout; the new helpers are untested. Review external dependencies and asset rights.
-
-## Pop Popcorn audit follow-up (2026-11-02)
-
-- Receipt UpdateAsync and ordinary snapshot saves are not shown sharing a lock, while receipt history is capped at 50. Review stale writes, retries, cross-server concurrency and recoverable idempotency before relying on fulfillment; no purchase test occurred.
-- Production consumes a batch before yielding presentation and does not visibly check output placement success. Test interruption, full or removed output, plot reset and recovery; this is a source-level risk, not a reproduced incident.
-- The new Luau helpers and crop blockout are untested. Verify device/input/accessibility, model rights, audio access, remaining services and performance.
-
-## Drive and Catch audit follow-up (2026-11-02)
-
-- Receipt fulfillment can return PurchaseGranted after a reported time-upgrade failure or maxed carry; the observed receipt-token map is volatile. Review intended compensation, durable PurchaseId idempotency, store-tab delivery and failure handling before relying on it.
-- Area spend/unlock and spin consumption/reward delivery have separate persistence and grant steps; test interruptions, failed load/save, retries and concurrent servers. This is a static observation, not a measured incident.
-- New snippets and vehicle blockout are untested; model and audio rights, runtime behavior, device input, accessibility and performance remain unverified. Continue the uncovered service and model inspection.
-
-## Grow A Tree audit follow-up (2026-11-02)
-
-- The receipt dispatcher is intentionally disabled and requires an independently reviewed, durable idempotent fulfillment transaction. Profile adapter does not implement session lifecycle. Test failure, retry, concurrent-server and shutdown scenarios before any deployment.
-- The model builders are primitive blockouts, not exported game models; source asset rights and model geometry remain unverified. Device, input, focus and server integration remain untested for the new snippets.
-
-- Static inspection did not cover every descendant or script, runtime behavior, purchase security, grant durability, responsive layout, accessibility or performance. Continue the scoped audit and test in a separate safe place.
-- Observed image and audio IDs have unknown ownership, access and reuse rights; verify each before reuse. The session reward snippet has not been executed.
+- Selected code examples remain `Untested:` until they are exercised in a safe project test place.
+- Before production adoption, verify persistence, receipt idempotency, interruption recovery, server
+  ownership, accessibility, input behavior and performance in the target game.
+- Asset IDs and model presence do not establish access, license or reuse rights; verify selected assets
+  separately in the project that will use them.
 
 Open items only. Closed items move to [[CHANGELOG]].
 
@@ -50,8 +32,9 @@ Open items only. Closed items move to [[CHANGELOG]].
 
 | # | Issue | Why it is open | Next action |
 |---|---|---|---|
-| R-04 | The repository is published (`github.com/kaffeindecaf/kaffeins-dev-vault`, 3 commits), but the staged diff has not had a line-by-line human review since. | Everything pushed is public; an unreviewed commit is a public mistake by definition. | Review each commit's diff before pushing; the release checks that remain are in [[RELEASE_CHECKLIST]]. |
+| R-04 | The repository is public and each new push publishes the current tree. | An unreviewed change can expose private project details or incorrect claims. | Review the full staged diff against [[RELEASE_CHECKLIST]] before any push. |
 | R-05 | Creator names are missing from some original records. | The asset notes provide IDs and source URLs, and the extraction log does not name the source developer. | Preserve available source links; do not invent names. See [[CREDITS]]. |
+| R-06 | Earlier public commits, tags and release archives may still contain project-specific notes removed from the current working tree. | Cleaning the current tree does not change already-published downloads or Git history. | Review and replace public release assets after the clean tree is approved. Do not rewrite history without a separate decision. |
 
 ## Blocked on a human in Roblox Studio
 
@@ -86,29 +69,19 @@ Open items only. Closed items move to [[CHANGELOG]].
 |---|---|---|---|
 | I-19 | The nine extracted notes are **adapted, not executed**. | Copying them into a project without testing is the same risk as any untested recipe. | Run one in a blank place (start with `S-round-phase-machine`) and relabel it `Tested:`. |
 | I-20 | Generalisation renamed things (currency, folders, module names). | A rename is a bug surface: a path or attribute name that no longer matches the source project. | Diff before use in the source project; the notes say which identifiers changed. |
-| I-21 | The source place's AI module (48 KB) was **not** transcribed. | Only its architecture is documented (`R-npc-state-machine`, `R-npc-think-budget`); its specific patrol/catch logic exists nowhere else. | Read it again if that logic is needed; do not reconstruct it from memory. |
 
 ## Vault fusion (2026-11-01)
 
 | # | Issue | Impact | Next action |
 |---|---|---|---|
 | I-22 | `Door Creak Open` details page was not readable through the web reader; its record relies on the official Creator Store search result. | Current page state, full description, access and license remain unchecked. | Open the exact listing in Studio and record the observed result before use. |
-| I-23 | No pre-rename file-hash manifest was recorded for the source game-vault package. | The package root was renamed after inventory; a pre/post hash comparison is unavailable. | Treat the renamed source as preserved by same-volume directory move; capture a current manifest if future migration is planned. |
-| I-24 | An empty legacy working directory remains locked by a running process outside this vault. | The 524 files are in the active destination and matched by SHA-256; the legacy directory has no vault contents. | Close the process holding that directory and remove the empty stub if desired. |
 
 ## UI pattern extraction (2026-11-02)
 
 | # | Issue | Impact | Next action |
 |---|---|---|---|
-| I-29 | The UI patterns and component snippets are based on Explorer/property inspection in Edit mode; the place was not played and no device screenshot or accessibility pass was captured. | Static hierarchy and offset dimensions do not prove runtime layout, interaction quality, responsive fit, or controller support. | Play the place and capture the P21-06 desktop, phone portrait/landscape, and gamepad checks in a separate evidence pass. |
-| I-30 | Image and sound IDs read from the place were not checked for external access, moderation state, license, or reuse permission. | A value in a user's place is not evidence that another experience can use it or that the note can redistribute the asset. | Follow [[G-asset-verification-workflow]] for any ID selected for reuse and document the rights/access evidence before promotion. |
-
-## Agent work log rollout (2026-11-01)
-
-| # | Issue | Impact | Next action |
-|---|---|---|---|
-| I-25 | `AGENTS.md` still has no pointer to the work log: the write was refused by the credential guard (approval prompt timed out), so §2 "read before you write" and §6 "when you finish" are unchanged. | The rules still bind through [[SCHEMA]] §11 and [[G-worklog-protocol]], but the file an agent reads *first* does not mention that a log is mandatory. | A human approves the two-line edit to `AGENTS.md` §2 and §6. Until then, [[NEXT_STEPS]] step 0 and the session-start prompt carry it. |
-| I-26 | The `gh` CLI is not installed on the authoring machine. | Remote checks used `git` and a browser; `gh pr checks`, `gh release` and `gh api` workflows are unavailable, and CI status cannot be asserted. | Install GitHub CLI if PR-level automation is wanted. Not required for clone/push. |
+| I-29 | Several UI recipes have design-only evidence; no responsive runtime screenshots or accessibility pass are recorded. | Static layout guidance does not prove runtime fit, interaction quality or controller support. | Verify the recipe in a separate target project across supported devices and input methods before promotion. |
+| I-30 | Asset identifiers found during project work do not establish external access, moderation status, license or reuse permission. | A value present in one project may not work in another or be eligible for redistribution. | Follow [[G-asset-verification-workflow]] for each candidate selected for reuse. |
 
 ## Known cosmetic issues
 
@@ -141,10 +114,11 @@ The backend pack's release identity is content versioning. It does not close the
 
 - **I-13** ~~Import reconciliation uncertain~~ → 206 source rows, 206 distinct IDs, 0 duplicates,
   0 CSV/JSON mismatch (`IMPORT_REPORT.md`).
-- **I-07 / I-15** ~~No git repository, no diff history~~ → repository initialised 2026-11-01 on
-  branch `main` and pushed to `github.com/kaffeindecaf/kaffeins-dev-vault` (`a907afc`); see
-  [[worklog-2026-11-01-worklog-templates]].
+- **I-07 / I-15** ~~No repository or diff history~~ → repository is initialized and release preparation
+  is tracked in [[RELEASE_CHECKLIST]].
 - **I-16** ~~Dashboards could go stale silently~~ → each generated dashboard carries its generation date, and
   `report --write-dashboards` regenerates all five.
 - **I-17** ~~Unclear what "tested" means for the tooling~~ → `verification: tested_local` added to the enum and
   documented in [[SCHEMA]], so tool tests never masquerade as Roblox Studio tests.
+- **I-25** ~~Agent rules omitted the work-log handoff~~ → `AGENTS.md` now links the work-log protocol in
+  its read-before-write and session-close sections.

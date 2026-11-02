@@ -15,7 +15,6 @@ _Generated. External sources age: Roblox documentation changes without notice. A
 | Source | Accessed | Age (days) | State | URL |
 |---|---|---:|---|---|
 | [[SRC-roblox-data-store-player-profile]] | 2026-11-01 | 1 | ok | https://create.roblox.com/docs/cloud-services/data-stores |
-| [[MASTER_AGENT_PROMPT]] | 2026-11-01 | 1 | ok |  |
 | [[SRC-backend-platform-contracts]] | 2026-11-02 | 0 | ok | https://create.roblox.com/docs/reference/engine/classes/GlobalDataStore |
 | [[SRC-creator-hub-animations]] | 2026-11-01 | 1 | ok | https://create.roblox.com/docs/animation/using |
 | [[SRC-creator-hub-audio-assets]] | 2026-11-01 | 1 | ok | https://create.roblox.com/docs/audio/assets |
@@ -33,4 +32,4 @@ _Generated. External sources age: Roblox documentation changes without notice. A
 | [[SRC-creator-hub-remote-events]] | 2026-11-01 | 1 | ok | https://create.roblox.com/docs/scripting/events/remote |
 | [[SRC-creator-hub-type-checking]] | 2026-11-01 | 1 | ok | https://create.roblox.com/docs/luau/type-checking |
 
-**18 source record(s), 0 needing review.**
+**17 source record(s), 0 needing review.**

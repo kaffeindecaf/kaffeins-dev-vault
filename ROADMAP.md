@@ -3,38 +3,19 @@ id: N-ROADMAP
 title: GameDev Knowledge Base — Master Roadmap
 type: project-roadmap
 status: planned
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 ---
 
 # ROADMAP — Roblox GameDev Knowledge Base
 
-## Curry delivery follow-up — 2026-11-02
+## Reusable pattern verification follow-up — 2026-11-02
 
-- [ ] Review the discriminatory kick attempt and delivery-script mismatches recorded in [[R-curry-delivery-pattern-audit]]; correct and test in the game only with appropriate authorization.
-- [ ] Integrate and test the four untested adaptations in [[T-curry-delivery-patterns]] in a safe place, including respawn, endpoint validation, accessibility, camera cleanup and long-route streaming.
-- [ ] Audit remaining world scripts and third-party dependencies; verify source asset rights, performance and runtime behavior before reuse.
-
-## Pop Popcorn follow-up — 2026-11-02
-
-- [ ] Review [[R-pop-popcorn-pattern-audit]], complete unexplored service and feature coverage, and test harvest, plot ownership, capacity, machine interruption and output recovery in a separate safe place.
-- [ ] Integrate and test the four untested adaptations in [[T-pop-popcorn-patterns]] across devices, input methods, accessibility and representative load.
-- [ ] Review receipt idempotency, regular-save/receipt concurrency and cross-server ownership; verify original asset rights and access before reuse.
-
-## Drive and Catch follow-up — 2026-11-02
-
-- [ ] Review [[R-drive-catch-pattern-audit]] and complete the remaining service, vehicle, model and gameplay inspection. Validate UI, driving, timing and gates across desktop, touch and gamepad in a separate safe place.
-- [ ] Integrate and test the five untested helpers in [[T-drive-catch-patterns]]; test weighted reward failure/retry, zone edges, network ownership, preview crop, input accessibility and model collisions.
-- [ ] Review receipt fulfillment, paid-random odds and persistence with a qualified owner; repair and test failure, duplicate and concurrent-server paths before using these designs. Verify source asset rights individually.
-
-## Grow A Tree follow-up — 2026-11-02
-
-- [ ] Integrate and safely test the seven additional persistence, receipt, movement, UI and model snippets catalogued in [[T-grow-tree-snippet-catalog]]. In particular, implement and review durable receipt transactions before enabling commerce.
-- [ ] Replace primitive tree and shop blockouts with separately licensed assets or original art; document pivots, collision, variant selection and device budgets.
-
-- [ ] Review [[R-grow-a-tree-pattern-audit]], [[S-session-reward-grid]], [[S-tree-query-hitbox]] and the untested `session-reward-card.luau` in a safe test place; record runtime evidence before promotion.
-- [ ] Check catalog, reward grid and inventory on desktop, phone portrait/landscape, keyboard, gamepad and touch, including localization, safe areas and reduced motion.
-- [ ] Review the remaining services and feature scripts, server claim/grant failure behavior, and access and reuse rights for each selected source asset. Profile representative devices before making performance claims.
+- [ ] Exercise selected untested snippets in an isolated place; cover ownership, failure/retry,
+  interruption, reconnect and cleanup paths before promoting their verification status.
+- [ ] Check UI integrations across target screen sizes and input methods, including safe areas,
+  localization, focus and reduced motion.
+- [ ] Verify asset access, licensing and model safety for each asset selected by a game project.
 
 > **Purpose:** A real build plan for an Obsidian vault that serves as a human-readable game-dev encyclopedia, a Roblox asset catalog, reusable Luau systems library, horror-design reference, and a reliable local knowledge layer for Hermes / Claude Code / Codex / Gemini CLI / OpenCode.
 >
@@ -42,8 +23,8 @@ tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 
 ## Project contract and scope
 
-- **Target root:** A new `GameDev-Knowledge-Base` folder on the user's Desktop, or an explicitly documented safe alternative. If an existing folder/vault is present, inspect, preserve and ask before destructive changes.
-- **Required source import:** Previously researched `Roblox_Horror_Asset_Vault` with a reported 206 candidate IDs in 11 categories, when the actual files are available. Candidate is **not** a license or permissions guarantee; no invented records or misleading status upgrades.
+- **Target root:** A clearly named knowledge-base folder in the configured workspace. If an existing folder/vault is present, inspect, preserve and ask before destructive changes.
+- **Required source import:** A Roblox horror asset research set with a reported 206 candidate IDs in 11 categories, when the actual source files are available. A candidate is **not** a license or permissions guarantee; no invented records or misleading status upgrades.
 - **Primary audience:** The developer in Obsidian, plus AI coding agents reading/querying the same local files.
 - **Minimum dependencies:** Markdown reader and Python 3.11+. SQLite FTS5 is preferred for full-text search but must have a fallback. Roblox Studio and community plugins are optional for the base experience.
 - **Change management:** Preserve imports, prefer additive edits, keep diffs/backups, never access other projects without consent, protect secrets and request approval for dangerous/external operations.
@@ -106,7 +87,7 @@ tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 **Phase goal:** Complete the concrete tasks below with real files, tests and an auditable status report.
 
 - [x] **P00-01** Check whether running on Windows, Linux, WSL or other supported system; record platform assumptions.
-- [x] **P00-02** Locate the actual Desktop including Windows Known Folders/OneDrive redirection or XDG Desktop location.
+- [x] **P00-02** Locate the configured workspace, accounting for platform-specific folders and redirection.
 - [x] **P00-03** Identify the target Obsidian vault, its current owner, and whether it already exists.
 - [x] **P00-04** Inspect for existing `.obsidian/` settings and preserve them without unsolicited edits.
 - [x] **P00-05** Inventory any prior knowledge bases and locate the 206-entry horror asset collection or ZIP if present.
@@ -202,13 +183,13 @@ tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 
 ---
 
-## Phase 03 — Non-destructive import of the existing 206-ID horror vault (P0)
+## Phase 03 — Non-destructive import of the 206-ID horror asset research set (P0)
 
 **Depends on:** 00, 02.  **Deliverables:** imports/raw; normalized asset notes; import manifest.
 
 **Phase goal:** Complete the concrete tasks below with real files, tests and an auditable status report.
 
-- [x] **P03-01** Locate existing `Roblox_Horror_Asset_Vault` directory or ZIP; do not pretend it exists if missing.
+- [x] **P03-01** Locate the asset research source directory or archive; do not pretend it exists if missing.
 - [x] **P03-02** If source is missing, create clear `imports/INSTRUCTIONS.md`, mark tasks blocked and proceed with other phases.
 - [x] **P03-03** Copy sources to `imports/raw` without changing original filenames or bytes.
 - [x] **P03-04** Validate ZIP entries and reject zip-slip paths, absolute paths and unsafe symlinks.
@@ -914,27 +895,24 @@ Maintain this block in `STATUS.md` as real work progresses:
 
 ---
 
-## Phase 20 — Kaffeins vault fusion, evidence expansion and v0.0.2 (P1)
+## Phase 20 — Project workflow, references and evidence expansion (P1)
 
-**Depends on:** 01–18. **Canonical vault:** `GameDev-Knowledge-Base`. **Deliverables:** integrated
+**Depends on:** 01–18. **Canonical vault:** this repository. **Deliverables:** integrated
 project workflow, sourced Roblox DataStore examples and diagrams, new Creator Store candidates,
-linked skill cards, a versioned source-vault folder, and updated validation/index evidence.
+linked skill cards and updated validation/index evidence.
 
-**Final vault root after owner-requested move:**
-`kaffeins-dev-vault-v0.0.2/GameDev-Knowledge-Base`.
-
-**Phase goal:** Fuse reusable material from `kaffeins-roblox-dev-vault` into the active knowledge
-vault without replacing the existing schema, duplicating the imported 206 asset rows, or promoting
-project-specific examples as general facts. Keep the game project as the source of truth for its
-own decisions and keep the shared libraries as the source for reusable knowledge.
+**Phase goal:** Add reusable project workflows and technical references without replacing the schema,
+duplicating imported asset rows, or promoting project-specific examples as general facts. Keep each
+game project as the source of truth for its own decisions and the shared library as the source for
+reusable knowledge.
 
 ### 20A — Source comparison and merge boundary
 
-- [x] **P20-01** Confirm the active destination from the owner: `GameDev-Knowledge-Base`.
+- [x] **P20-01** Confirm the active vault root from its project configuration.
 - [x] **P20-02** Inventory the source package and identify the actual reusable workflow and asset sources.
 - [x] **P20-03** Confirm the 206-row source asset collection is already imported byte-exactly; do not
   import the same rows again.
-- [ ] **P20-04** Record file hashes for the source package before any relocation and preserve a rollback map.
+- [ ] **P20-04** Record file hashes before any future source migration and preserve a rollback map.
 - [x] **P20-05** Keep `imports/raw/` unchanged and retain source grades, unknown access/license status,
   and untested Studio status.
 - [x] **P20-06** Define project-specific notes as project-owned; promote only generalized patterns with
@@ -981,10 +959,9 @@ own decisions and keep the shared libraries as the source for reusable knowledge
 
 ### 20E — Version transition and acceptance
 
-- [x] **P20-25** Rename the source game-vault package to `kaffeins-dev-vault-v0.0.2` after validating
-  that the destination integration is complete and the target name is free.
-- [x] **P20-26** Update source references, boundary notes, README and handoff for the owner's
-  requested nested vault location.
+- [x] **P20-25** Keep the integrated workflow material in the canonical shared vault without
+  duplicating imported asset rows.
+- [x] **P20-26** Update references, boundary notes, README and handoff for the configured vault root.
 - [x] **P20-27** Run `python scripts/gamedev_kb.py validate` and `index`; record actual results.
 - [x] **P20-28** Check generated MOCs, asset candidate graph links and that the raw source manifest still
   matches every imported file.
@@ -994,23 +971,21 @@ own decisions and keep the shared libraries as the source for reusable knowledge
 
 **Current state:** Core integration is present and validation/index are recorded. The acceptance gate
 remains open for a fresh-project template audit and Studio checks of the DataStore example and new
-assets. A source-package pre-rename hash manifest was not captured; see [[ISSUES]] I-23.
+assets.
 
 ---
 
-## Phase 21 — UI pattern library from the open `ui layout` place (P1)
+## Phase 21 — UI pattern library and responsive review (P1)
 
-**Depends on:** 09, 11, 20. **Source:** the user's Roblox Studio place `ui layout` (place ID
-`138561306478412`), inspected read-only in Edit mode on 2026-11-02. **Deliverables:** project
-evidence note, pattern recipes, reusable template, fill-in Luau snippets, and responsive QA follow-up.
+**Depends on:** 09, 11, 20. **Deliverables:** reusable UI pattern notes, component recipes, a
+template, fill-in Luau snippets and responsive QA follow-up. Project-specific hierarchy and media
+identifiers remain in the game's own files, not in the shared download.
 
-- [x] **P21-01** Inspect the Explorer across Workspace, StarterGui, StarterPlayer, ReplicatedStorage,
-  ServerScriptService, ServerStorage, and the remaining root services; distinguish staged Workspace
-  experiments from the active `StarterGui` UI.
-- [x] **P21-02** Record the collectible HUD, index grid, shop catalog, modal, popup, and horror texture
-  composition with exact source paths and when to choose each pattern.
-- [x] **P21-03** Record project image/sound property IDs as observations only; do not infer rights,
-  external access, loading, or permission to reuse them.
+- [x] **P21-01** Define a read-only interface review workflow that distinguishes active UI from staged
+  experiments and avoids editing the source project.
+- [x] **P21-02** Add reusable patterns for collection grids, catalogs, modals, popups and themed layouts.
+- [x] **P21-03** Keep game-specific image and sound identifiers out of the shared library; require
+  per-project access and rights checks before reuse.
 - [x] **P21-04** Add reusable UI component recipes for buttons, sliders, progress bars, collection cards,
   shop catalogs, and modal dialogs.
 - [x] **P21-05** Add a provenance-first UI pattern note template and data-driven Luau snippets for button,

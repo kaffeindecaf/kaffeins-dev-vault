@@ -11,14 +11,15 @@ verification: design_only
 client_server: client
 roblox_services: [TweenService, UserInputService]
 code_blocks: 0
-related: [ "R-ui-patterns-ui-layout-project", "R-ui-style-guide-tokens", "R-controller-focus", "R-mobile-safe-areas" ]
+related: [ "R-ui-style-guide-tokens", "R-controller-focus", "R-mobile-safe-areas" ]
 ---
 
 # Reusable UI button with explicit states
 
 ## Purpose
 
-A reusable action control for a HUD or menu. The inspected `StarterGui.KrissyUI.MainFrame` uses distinct Index and Shop `TextButton`s with an icon, separate text label, rounded corners, a stroke, gradient, and aspect constraint. Its hierarchy makes each button's action readable and gives designers room to tune icon and label independently.
+A reusable action control for a HUD or menu. A clear label, optional icon and consistent visual
+states make the action legible while leaving room to tune the component to the project's style.
 
 **Choose this design** for a primary or frequent destination that needs a label plus a recognizable icon. Use an icon-only control only when the symbol is established and an accessible text name is still supplied. For irreversible actions, use a confirm pattern rather than hover/click feedback alone.
 
@@ -52,14 +53,15 @@ Supply label, optional icon asset value, colors, minimum size, corner radius, tw
 
 See `ui-button.luau` in `11 - Templates and Schemas/Luau Snippets/` for the data-driven factory. The snippet accepts a `TextButton`, applies optional theme and reduced-motion behavior, and returns a cleanup function. Its UI interaction is client-side; connect `Activated` to an existing client controller or a server-validated remote.
 
-## Why the project version is a useful reference
+## Why this pattern helps
 
-The project separates button action, icon, and text label and pairs them with a consistent rounded/stroked/gradient treatment. That lets one style work for two distinct destinations without hiding the action behind imagery. Rebuild with `Scale` positioning and verify thumb reach; the observed button child geometry is not a responsive layout specification.
+Separating action, icon and text lets one visual style serve several destinations without hiding the
+action behind imagery. Rebuild with `Scale` positioning where appropriate and verify thumb reach.
 
 ## Accessibility and review
 
 - [ ] Button is `Selectable` and has an intentional `SelectionOrder`/focus state.
-- [ ] Touch target is at least 44×44 px (the project button is 78×74 px in the inspected properties).
+- [ ] Touch target is large enough for the target device; verify the actual dimensions in Studio.
 - [ ] Text is legible without a gradient or color-only cue; icon image has a meaningful accessible name through nearby text.
 - [ ] Disabled and error states explain why the action cannot run.
 - [ ] Reduced motion skips scale/position tweens.
@@ -67,4 +69,4 @@ The project separates button action, icon, and text label and pairs them with a 
 
 ## Verification
 
-The hierarchy and size observation come from Studio Edit mode. The standalone snippet is adapted for this library and is `Untested:` in Roblox Studio.
+The standalone snippet is a reusable proposal and is `Untested:` in Roblox Studio.

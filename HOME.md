@@ -66,6 +66,7 @@ Full command reference: [[README]]. Working state: [[STATUS]]. What is left: [[N
 
 ## Housekeeping
 
+- Project onboarding and user goals: [[SOUL]] · [[checklist]] (separate from the vault [[ROADMAP]])
 - Rules for AI agents: [[AGENTS]] · decision log: [[DECISIONS]] · metadata rules: [[SCHEMA]]
 - Open problems: [[ISSUES]] · change history: [[CHANGELOG]] · licence policy: [[LICENSES_AND_SOURCES]]
 - The task ledger this was built against: [[ROADMAP]]

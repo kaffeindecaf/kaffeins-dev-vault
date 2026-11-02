@@ -15,14 +15,18 @@ client_server: server
 roblox_services: [DataStoreService, Players]
 dependencies: []
 code_blocks: 2
-related: [ "R-datastore-safety", "R-memorystore-messaging", "S-save-load-migration", "SRC-roblox-data-store-player-profile", "G-skill-roblox-core-loop", "PR-datastore-review" ]
 ---
 
 # Player profile persistence — server memory, atomic updates and safe shutdown
 
-## Grow A Tree integration example (static observation)
+## Source-derived integration caution
 
-`ServerScriptService.Modules.DataService` selects distinct Studio and live store names and delegates profile ownership to `PersistenceSession`. The latter uses `UpdateAsync` with a session token and lease; the data service normalizes settings and purchase fields. This does not establish recovery correctness or safety under all failures. The adapted `profile-update-transform.luau` is an untested server-only ownership-checking adapter, not a complete load, lease renewal, migration, retry or shutdown implementation. Use it only inside a reviewed profile pipeline. `UpdateAsync` transforms may be invoked repeatedly, so keep them non-yielding and free of side effects; see [GlobalDataStore documentation](https://create.roblox.com/docs/reference/engine/classes/GlobalDataStore). Source context: [[R-grow-a-tree-pattern-audit]].
+An observed profile design delegated saves to a session owner using `UpdateAsync`, a session token and
+a lease. That structure alone does not establish recovery correctness or safety under failures. The
+adapted `profile-update-transform.luau` is an untested server-only ownership-checking adapter, not a
+complete load, lease renewal, migration, retry or shutdown implementation. Use it only inside a
+reviewed profile pipeline. `UpdateAsync` transforms may be invoked repeatedly, so keep them
+non-yielding and free of side effects; see [GlobalDataStore documentation](https://create.roblox.com/docs/reference/engine/classes/GlobalDataStore).
 
 This note connects the existing save/migration recipe to Roblox's current player-data reference.
 It is a design reference; the snippets have not been run in Studio.

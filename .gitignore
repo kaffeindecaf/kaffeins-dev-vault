@@ -10,6 +10,9 @@
 !/imports/staging/README.md
 /imports/raw/SOURCE_MANIFEST.json
 
+# Local-only source-project audits and owner work logs
+/.private-project-notes/
+
 # Python runtime artifacts
 __pycache__/
 *.py[cod]

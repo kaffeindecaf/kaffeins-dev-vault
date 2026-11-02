@@ -53,4 +53,4 @@ _Generated. Sorted by `updated` frontmatter field, newest first._
 | 2026-11-02 | [[MOC-horror-design]] | moc | reviewed |
 | 2026-11-02 | [[MOC-enemy-ai]] | moc | reviewed |
 | 2026-11-02 | [[MOC-ui-and-game-feel]] | moc | reviewed |
-| 2026-11-02 | [[R-curry-delivery-pattern-audit]] | reference | draft |
+| 2026-11-02 | [[MOC-level-design]] | moc | reviewed |

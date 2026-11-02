@@ -1,14 +1,14 @@
 ---
 id: N-README
 type: guide
-title: Kaffeins Roblox Development Vault — v1.0.0
+title: Roblox Game Development Knowledge Base — v1.0.0
 status: draft
 updated: 2026-11-02
 tags: [readme, setup, roblox, knowledge-base, v1]
 source_urls: []
 ---
 
-# Kaffeins Roblox Development Vault · v1.0.0
+# Roblox Game Development Knowledge Base · v1.0.0
 
 A searchable Roblox development vault with reusable Luau systems, engineering references, UI patterns, game design notes and an asset research catalogue. Browse it in Obsidian, any Markdown editor, or GitHub. Python adds local search and validation; no Obsidian plugin or Python package is required.
 
@@ -75,7 +75,7 @@ On Windows, `py -3` may replace `python`. The local index at `config/index.sqlit
 | `03 - Reusable Systems` | System contracts, mechanics and implementation links |
 | `04 - Horror Design` | Tension, pacing, ambience and accessibility |
 | `05 - Enemy AI` | Perception, state machines and decision budgets |
-| `06 - UI UX and Game Feel` | Layout, input, feedback and source audits |
+| `06 - UI UX and Game Feel` | Layout, input, feedback and accessibility |
 | `07 - Level Design and Progression` | Routes, progression, puzzles and blockouts |
 | `08 - Bugs and Solutions` | Debugging recipes and labeled hypothetical failures |
 | `09 - AI Agent Knowledge` | Agent rules, prompts, context packs and work logs |
