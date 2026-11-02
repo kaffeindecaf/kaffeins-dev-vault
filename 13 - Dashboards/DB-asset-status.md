@@ -3,7 +3,7 @@ id: DB-asset-status
 type: dashboard
 title: Asset status dashboard
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [dashboard, assets]
 source_urls: []
 ---

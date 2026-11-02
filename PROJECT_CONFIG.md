@@ -3,12 +3,19 @@ id: N-PROJECT-CONFIG
 type: guide
 title: PROJECT_CONFIG — settings, paths and scope boundaries
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [config, paths, scope]
 source_urls: []
 ---
 
 # PROJECT_CONFIG
+
+## Release version
+
+Current content release: **v1.0.0**. The canonical plain version is in `VERSION`;
+`config/vault.json` mirrors it as `release_version`. The frontmatter schema remains
+version 2 because this release does not change required note fields. Folder names
+are historical local paths and do not determine release identity.
 
 Machine-readable settings live in `config/vault.json`. This page explains them and the hard scope
 boundaries. Both are the source of truth for the CLI and for any agent.

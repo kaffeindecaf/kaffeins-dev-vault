@@ -3,7 +3,7 @@ id: DB-recent
 type: dashboard
 title: Recently updated notes
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [dashboard]
 source_urls: []
 ---
@@ -15,42 +15,42 @@ _Generated. Sorted by `updated` frontmatter field, newest first._
 | Updated | Note | Type | Status |
 |---|---|---|---|
 | 2026-13-45 | [[invalid-bad-enums]] | notarealtype | half-done |
-| 2026-11-01 | [[G-game-vault-integration]] | guide | draft |
-| 2026-11-01 | [[G-reading-order]] | guide | reviewed |
-| 2026-11-01 | [[MOC-start-here]] | moc | reviewed |
-| 2026-11-01 | [[G-asset-favorites]] | guide | reviewed |
-| 2026-11-01 | [[G-asset-quality-rubric]] | guide | reviewed |
-| 2026-11-01 | [[G-asset-rejection-log]] | guide | reviewed |
-| 2026-11-01 | [[G-asset-verification-workflow]] | guide | reviewed |
-| 2026-11-01 | [[G-studio-animation-test]] | guide | reviewed |
-| 2026-11-01 | [[G-studio-audio-test]] | guide | reviewed |
-| 2026-11-01 | [[G-studio-model-inspection]] | guide | reviewed |
-| 2026-11-01 | [[G-new-asset-candidates-from-creator-store]] | guide | draft |
-| 2026-11-01 | [[IDX-ambience]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-animations]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-doors]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-footsteps]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-horror-cues]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-lighting]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-models]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-plugins]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-type-animation]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-type-audio]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-type-model]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-type-plugin]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-ui-kits]] | dashboard | reviewed |
-| 2026-11-01 | [[IDX-ui-sounds]] | dashboard | reviewed |
-| 2026-11-01 | [[MOC-new-creator-store-candidates]] | moc | draft |
-| 2026-11-01 | [[MOC-asset-library]] | moc | reviewed |
-| 2026-11-01 | [[R-attributes-vs-values-vs-config]] | reference | reviewed |
-| 2026-11-01 | [[R-collectionservice-tags]] | reference | reviewed |
-| 2026-11-01 | [[R-module-dependencies]] | reference | reviewed |
-| 2026-11-01 | [[R-script-types-and-placement]] | reference | reviewed |
-| 2026-11-01 | [[R-server-authority-replication]] | reference | reviewed |
-| 2026-11-01 | [[R-datastore-safety]] | reference | draft |
-| 2026-11-01 | [[R-memorystore-messaging]] | reference | reviewed |
-| 2026-11-01 | [[SRC-roblox-data-store-player-profile]] | source | draft |
-| 2026-11-01 | [[G-luau-code-review-checklist]] | guide | reviewed |
-| 2026-11-01 | [[G-player-privacy]] | guide | reviewed |
-| 2026-11-01 | [[G-roblox-api-links]] | guide | reviewed |
-| 2026-11-01 | [[R-luau-language-overview]] | reference | reviewed |
+| 2026-11-02 | [[MOC-start-here]] | moc | reviewed |
+| 2026-11-02 | [[R-community-libraries]] | reference | draft |
+| 2026-11-02 | [[R-memorystore-messaging]] | reference | reviewed |
+| 2026-11-02 | [[MOC-roblox-development]] | moc | reviewed |
+| 2026-11-02 | [[MOC-reusable-systems]] | moc | reviewed |
+| 2026-11-02 | [[S-bounded-production-pipeline]] | system | draft |
+| 2026-11-02 | [[S-collectible-viewport-preview]] | system | draft |
+| 2026-11-02 | [[S-cross-server-gift-ledger]] | system | draft |
+| 2026-11-02 | [[S-daily-retention-engine]] | system | draft |
+| 2026-11-02 | [[S-data-vault-shadow-backup]] | system | draft |
+| 2026-11-02 | [[S-grow-tree-model-blueprints]] | system | draft |
+| 2026-11-02 | [[S-lifecycle-memory-leak-profiler]] | system | draft |
+| 2026-11-02 | [[S-linear-route-progress]] | system | draft |
+| 2026-11-02 | [[S-matchmaking-room-orchestrator]] | system | draft |
+| 2026-11-02 | [[S-objective-tracker]] | system | reviewed |
+| 2026-11-02 | [[S-plot-resource-deposit]] | system | draft |
+| 2026-11-02 | [[S-proximity-workspace-streamer]] | system | draft |
+| 2026-11-02 | [[S-purchase-fulfillment-center]] | system | draft |
+| 2026-11-02 | [[S-quest-achievement-blueprint-factory]] | system | draft |
+| 2026-11-02 | [[S-receipt-fulfillment-contract]] | system | draft |
+| 2026-11-02 | [[S-remote-event-telemetry-dashboard]] | system | draft |
+| 2026-11-02 | [[S-rolling-replay-killcam]] | system | draft |
+| 2026-11-02 | [[S-round-phase-machine]] | system | reviewed |
+| 2026-11-02 | [[S-sequential-area-gates]] | system | draft |
+| 2026-11-02 | [[S-session-reward-grid]] | system | draft |
+| 2026-11-02 | [[S-tree-query-hitbox]] | system | draft |
+| 2026-11-02 | [[S-ui-button-component]] | system | draft |
+| 2026-11-02 | [[S-ui-collection-card-component]] | system | draft |
+| 2026-11-02 | [[S-ui-modal-dialog]] | system | draft |
+| 2026-11-02 | [[S-ui-progress-bar-component]] | system | draft |
+| 2026-11-02 | [[S-ui-shop-catalog-layout]] | system | draft |
+| 2026-11-02 | [[S-ui-slider-component]] | system | draft |
+| 2026-11-02 | [[S-world-space-menu-camera]] | system | draft |
+| 2026-11-02 | [[S-zone-timer-contract]] | system | draft |
+| 2026-11-02 | [[H-ui-horror-overlay-composition]] | reference | draft |
+| 2026-11-02 | [[MOC-horror-design]] | moc | reviewed |
+| 2026-11-02 | [[MOC-enemy-ai]] | moc | reviewed |
+| 2026-11-02 | [[MOC-ui-and-game-feel]] | moc | reviewed |
+| 2026-11-02 | [[R-curry-delivery-pattern-audit]] | reference | draft |

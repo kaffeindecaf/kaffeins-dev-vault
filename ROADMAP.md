@@ -9,6 +9,33 @@ tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 
 # ROADMAP — Roblox GameDev Knowledge Base
 
+## Curry delivery follow-up — 2026-11-02
+
+- [ ] Review the discriminatory kick attempt and delivery-script mismatches recorded in [[R-curry-delivery-pattern-audit]]; correct and test in the game only with appropriate authorization.
+- [ ] Integrate and test the four untested adaptations in [[T-curry-delivery-patterns]] in a safe place, including respawn, endpoint validation, accessibility, camera cleanup and long-route streaming.
+- [ ] Audit remaining world scripts and third-party dependencies; verify source asset rights, performance and runtime behavior before reuse.
+
+## Pop Popcorn follow-up — 2026-11-02
+
+- [ ] Review [[R-pop-popcorn-pattern-audit]], complete unexplored service and feature coverage, and test harvest, plot ownership, capacity, machine interruption and output recovery in a separate safe place.
+- [ ] Integrate and test the four untested adaptations in [[T-pop-popcorn-patterns]] across devices, input methods, accessibility and representative load.
+- [ ] Review receipt idempotency, regular-save/receipt concurrency and cross-server ownership; verify original asset rights and access before reuse.
+
+## Drive and Catch follow-up — 2026-11-02
+
+- [ ] Review [[R-drive-catch-pattern-audit]] and complete the remaining service, vehicle, model and gameplay inspection. Validate UI, driving, timing and gates across desktop, touch and gamepad in a separate safe place.
+- [ ] Integrate and test the five untested helpers in [[T-drive-catch-patterns]]; test weighted reward failure/retry, zone edges, network ownership, preview crop, input accessibility and model collisions.
+- [ ] Review receipt fulfillment, paid-random odds and persistence with a qualified owner; repair and test failure, duplicate and concurrent-server paths before using these designs. Verify source asset rights individually.
+
+## Grow A Tree follow-up — 2026-11-02
+
+- [ ] Integrate and safely test the seven additional persistence, receipt, movement, UI and model snippets catalogued in [[T-grow-tree-snippet-catalog]]. In particular, implement and review durable receipt transactions before enabling commerce.
+- [ ] Replace primitive tree and shop blockouts with separately licensed assets or original art; document pivots, collision, variant selection and device budgets.
+
+- [ ] Review [[R-grow-a-tree-pattern-audit]], [[S-session-reward-grid]], [[S-tree-query-hitbox]] and the untested `session-reward-card.luau` in a safe test place; record runtime evidence before promotion.
+- [ ] Check catalog, reward grid and inventory on desktop, phone portrait/landscape, keyboard, gamepad and touch, including localization, safe areas and reduced motion.
+- [ ] Review the remaining services and feature scripts, server claim/grant failure behavior, and access and reuse rights for each selected source asset. Profile representative devices before making performance claims.
+
 > **Purpose:** A real build plan for an Obsidian vault that serves as a human-readable game-dev encyclopedia, a Roblox asset catalog, reusable Luau systems library, horror-design reference, and a reliable local knowledge layer for Hermes / Claude Code / Codex / Gemini CLI / OpenCode.
 >
 > **Operating rule:** This file is the project task ledger. **Do not check a box without creating the deliverable and actually verifying the result.** Update `STATUS.md` and `CHANGELOG.md` after every completed phase.
@@ -968,3 +995,27 @@ own decisions and keep the shared libraries as the source for reusable knowledge
 **Current state:** Core integration is present and validation/index are recorded. The acceptance gate
 remains open for a fresh-project template audit and Studio checks of the DataStore example and new
 assets. A source-package pre-rename hash manifest was not captured; see [[ISSUES]] I-23.
+
+---
+
+## Phase 21 — UI pattern library from the open `ui layout` place (P1)
+
+**Depends on:** 09, 11, 20. **Source:** the user's Roblox Studio place `ui layout` (place ID
+`138561306478412`), inspected read-only in Edit mode on 2026-11-02. **Deliverables:** project
+evidence note, pattern recipes, reusable template, fill-in Luau snippets, and responsive QA follow-up.
+
+- [x] **P21-01** Inspect the Explorer across Workspace, StarterGui, StarterPlayer, ReplicatedStorage,
+  ServerScriptService, ServerStorage, and the remaining root services; distinguish staged Workspace
+  experiments from the active `StarterGui` UI.
+- [x] **P21-02** Record the collectible HUD, index grid, shop catalog, modal, popup, and horror texture
+  composition with exact source paths and when to choose each pattern.
+- [x] **P21-03** Record project image/sound property IDs as observations only; do not infer rights,
+  external access, loading, or permission to reuse them.
+- [x] **P21-04** Add reusable UI component recipes for buttons, sliders, progress bars, collection cards,
+  shop catalogs, and modal dialogs.
+- [x] **P21-05** Add a provenance-first UI pattern note template and data-driven Luau snippets for button,
+  slider, progress bar, item card, and modal components. Mark all snippets untested.
+- [ ] **P21-06** Capture and review in-game screenshots across desktop, phone portrait/landscape, and
+  gamepad focus. Verify safe areas, text scale, touch targets, and motion before promoting patterns.
+- [ ] **GATE-P21** A human has reviewed the patterns and observed the relevant layouts in a runtime
+  session; no project image or sound is represented as cleared for reuse without a separate rights check.

@@ -3,7 +3,7 @@ id: MOC-sources
 type: moc
 title: Reference Sources — where platform claims come from
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [sources, moc]
 source_urls: []
 confidence: high
@@ -38,6 +38,9 @@ Canonical Roblox documentation, fetched and verified on 2026-11-01. Every note i
 | [[SRC-creator-hub-pathfinding]] | PathfindingService |
 | [[SRC-creator-hub-modules]] | ModuleScripts |
 | [[SRC-creator-hub-publishing]] | publishing and ownership |
+
+Latest backend primary-source access: [[SRC-backend-platform-contracts]] (2026-11-02),
+supporting [[T-backend-systems-catalog]] and its ten system notes.
 
 ## Non-official sources
 

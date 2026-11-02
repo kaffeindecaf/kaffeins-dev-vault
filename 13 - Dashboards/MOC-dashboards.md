@@ -3,7 +3,7 @@ id: MOC-dashboards
 type: moc
 title: Dashboards — map of content
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [moc]
 source_urls: []
 confidence: high

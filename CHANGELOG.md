@@ -3,12 +3,72 @@ id: N-CHANGELOG
 type: changelog
 title: CHANGELOG
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [changelog]
 source_urls: []
 ---
 
 # CHANGELOG
+
+## v1.0.0 — 2026-11-02 — Reusable backend systems
+
+- Added all ten requested systems as original ModuleScripts: integrity/shadow guard, cross-server
+  currency and unique-item gifts, lifecycle leak suspects, remote telemetry/dashboard, rolling replay,
+  room FSM/orchestrator, proximity culling/interest routing, retention, purchase fulfillment and quests/UI.
+- Added 17 implementation files, three test files, ten system contracts, the integration catalog,
+  primary-source record, Studio report and desktop UI preview.
+- Studio Play final result: 11 cases passed, 0 failed, including 34 mock economy fault checks and FIFO contention;
+  client replay passed four checks. A missing closing end in the optional webhook adapter was
+  found in the first load pass, corrected and covered by an explicit module-load test.
+- Rewrote README, linked HOME and older related recipes, and set VERSION plus
+  config/vault.json release_version to 1.0.0. Note schema stays at 2; folder paths remain stable.
+- Corrected overbroad guarantees: transfers are durable recovery sagas, byte counts are estimates,
+  leak reports identify suspects, and cosmetic culling complements engine streaming.
+- Corrected the older MemoryStore/MessagingService reference and source record: message delivery
+  is best effort, not guaranteed at least once; a lease alone cannot fence stale profile saves.
+- Rebuilt maps/index and ran local validation/CLI tests; exact output, including the initial
+  missing release-note link, is in [[worklog-2026-11-02-backend-v1-release]].
+- Temporary Studio roots and preview instances were removed and the session returned to Edit.
+  Live persistence/purchases/webhooks and the remaining integration checks are tracked as I-31–I-33.
+
+## 2026-11-02 — Practical community-inspired snippets
+
+Added original, untested cleanup scope, request token bucket and zone membership diff modules, with integration examples and test cases.
+
+## 2026-11-02 — Roblox community libraries research
+
+Added a sourced overview of discovery lists, Knit, Janitor, Maid, ProfileStore, ReplicaService, Replica, ZonePlus, Blink and ByteNet, with adoption and verification caveats.
+
+## 2026-11-02 — Curry delivery static patterns
+
+Added a source-scoped audit, route progress and world-space menu recipes, four untested helpers or primitive blockouts, and documented discriminatory kick logic, delivery mismatches and review work. Studio was read only.
+
+## 2026-11-02 — Pop Popcorn static patterns
+
+Added a source-scoped overview, bounded production and plot deposit recipes, and four untested arithmetic, layout and primitive model templates. Recorded asset identifiers, receipt concurrency and interrupted-production review work. Studio was read only.
+
+## 2026-11-02 — Drive and Catch static patterns
+
+Added a source-scoped audit, collectible preview, safe-zone timer and sequential-gate recipes, plus four untested reusable helpers and a primitive vehicle blockout. Documented receipt and persistence failure paths, asset rights limits and further device/runtime work. Studio was read only.
+
+## 2026-11-02 — Grow A Tree integration templates
+
+Added seven untested adapters and original blockout builders for profile updates, receipts, sprint, settings, notifications, trees and a shop stand. Added receipt and model blueprints, settings/movement observations, an integration template and snippet catalog; expanded existing persistence and sprint recipes. Source-place scripts were read only.
+
+## 2026-11-02 — Grow A Tree static pattern audit
+
+Added a source-scoped overview, session reward and tree query-hitbox recipes, an untested reward-card presentation snippet, and a shop example. Recorded incomplete coverage, runtime/device checks and asset rights as follow-up work. The place was read in Edit mode only.
+
+## 2026-11-02 — UI pattern extraction and component snippets
+
+- Read the `ui layout` place's Explorer in Studio Edit mode and added [[R-ui-patterns-from-ui-layout-project]]
+  with the collectible HUD, index, shop, popups, Workspace-staged experiments, and observed image/sound IDs.
+- Added button, slider, progress bar, collection card, shop catalog, modal, and horror-overlay recipes.
+  Their notes explain the use case, layout and constraints, why the pattern helps, and review requirements.
+- Added [[T-ui-pattern]] and fill-in Luau modules in `11 - Templates and Schemas/Luau Snippets/` for
+  button, slider, progress bar, item card, and modal behavior. All adapted scripts remain `Untested:`.
+- Added Phase 21 to [[ROADMAP]]. Runtime screenshots, device checks, controller review, asset access,
+  and asset rights remain open; see [[ISSUES]].
 
 ## 2026-11-01 — Agent work log templates (schema v2)
 

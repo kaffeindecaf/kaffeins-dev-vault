@@ -3,12 +3,15 @@ id: N-HOME
 type: moc
 title: HOME — GameDev Knowledge Base
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [home, dashboard]
 source_urls: []
 ---
 
-# 🏠 GameDev Knowledge Base
+# 🏠 GameDev Knowledge Base · v1.0.0
+
+**Backend systems:** [[T-backend-systems-catalog]] links all ten systems and their Luau modules.
+Release notes: [[RELEASE-v1.0.0]]. Executed scope: [[BACKEND_SYSTEMS_TEST_REPORT]].
 
 A working knowledge base for building Roblox games: an asset catalogue, a Luau engineering
 encyclopedia, reusable mechanics, horror design, enemy AI, UI patterns, and hard rules for AI agents
@@ -21,9 +24,9 @@ editor or on GitHub, with no plugins.
 
 | Library | What is in it | Entry |
 |---|---|---|
-| Asset Library | 206 researched Roblox asset **candidates** — IDs, links, caveats | [[MOC-asset-library]] |
+| Asset Library | 209 researched Roblox asset **candidates** — IDs, links, caveats | [[MOC-asset-library]] |
 | Roblox Development | Luau, client/server, remotes, DataStores, physics, performance | [[MOC-roblox-development]] |
-| Reusable Systems | 20 mechanic recipes with API, failure modes and tests | [[MOC-reusable-systems]] |
+| Reusable Systems | Mechanics and ten backend systems with contracts, code and scoped tests | [[MOC-reusable-systems]] |
 | Horror Design | Tension pacing, ambience, an adaptive director, accessibility | [[MOC-horror-design]] |
 | Enemy AI | Server-owned FSM, perception, pathfinding, think budgets | [[MOC-enemy-ai]] |
 | UI / UX & Game Feel | Responsive layout, tokens, prompts, camera feel, reduced motion | [[MOC-ui-and-game-feel]] |
@@ -43,7 +46,7 @@ Three states are tracked honestly, and they are not the same thing:
 - **sourced** — it links an official source in `source_urls`.
 - **verified** — it was actually run, and the evidence path is recorded.
 
-A note that is only *written* says `verification: untested` or `design_only`. **All 206 asset
+A note that is only *written* says `verification: untested` or `design_only`. **All 209 asset
 records are untested candidates.** A Creator Store listing proves an ID exists; it does not prove
 the audio plays in your game, that you have permission, or that a model is safe. See
 [[G-asset-verification-workflow]].

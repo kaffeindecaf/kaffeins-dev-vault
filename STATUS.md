@@ -1,58 +1,45 @@
 ---
 id: N-STATUS
 type: report
-title: STATUS — current build state
+title: STATUS — v1.0.0 current build state
 status: draft
-updated: 2026-11-01
-tags: [status, handoff]
+updated: 2026-11-02
+tags: [status, handoff, release, v1]
 source_urls: []
-confidence: high
+confidence: medium
 verification: tested_local
-client_server: both
-code_blocks: 0
-test_method: python -m unittest discover -s tests -v
-tested_at: 2026-11-01
-test_evidence: "TEST_REPORT.md §1 — Ran 31 tests ... OK; CLI runs in §2"
-related: [ "TEST_REPORT", "ISSUES", "NEXT_STEPS" ]
+tested_at: 2026-11-02
+test_evidence: worklog-2026-11-02-backend-v1-release.md
+related: ["T-backend-systems-catalog", "N-BACKEND-SYSTEMS-TEST-REPORT", "N-ISSUES"]
 ---
 
-# Current status
+# Current status · v1.0.0
 
-- **Updated (ISO date/time):** 2026-11-01
-- **Current phase and last completed task ID:** P20 (vault fusion) in progress; latest completed task
-  P20-29. P19 (optional extensions) remains deliberately not started. Full ledger: [[ROADMAP]].
-- **Vault root:** the folder containing `scripts/` and `config/vault.json`
-- **Original asset import:** source archive copied byte-exact to `imports/raw/`; 14 files re-hashed
-  after import, 0 mismatches
-- **Source IDs / normalized IDs / unresolved duplicates:** **206 / 206 / 0** in the immutable import;
-  three additional Creator Store candidates are separate notes; **209 total candidate notes**.
-- **Notes created by type:** asset 209, bug 9, changelog 1, dashboard 19, decision 1, experiment 1,
-  guide 54, moc 17, principle 13, project 17, project-roadmap 1, prompt 9, reference 66, report 6,
-  source 17, spec 1, system 30, template 22, worklog 1 (total **494**, excludes 8 validator fixtures).
-- **Notes by verification:** design_only 168, reference_only 92, tested_local 4, untested 230
-- **Commands tested with results:** `doctor` · `validate` (latest: 502 notes checked, 0 errors, 0 warnings) ·
-  `index` (latest: 502 indexed with FTS5; fingerprint `2749d4ba7b62debc`) · `report` (494 notes, 0 broken links) ·
-  `search` · `context` · `asset` (incl. not-found) · `export` json+csv · `report --write-dashboards` ·
-  `import_assets.py` ×2 (idempotent) · `unittest discover` (**31 tests, OK**). Output: [[TEST_REPORT]].
-- **Roblox Studio tests:** **not_run**. No place was opened. The new DataStore examples are `Untested:`, and all 209
-  asset candidates remain `untested` ([[ASSET_VERIFICATION_REPORT]]).
-- **Risks, blockers and open questions:** [[ISSUES]] and [[RELEASE_CHECKLIST]] — Studio verification remains open; the source-package
-  rename has no pre-rename file-hash manifest (I-23); Door Creak Open details require a Studio listing check (I-22);
-  the old top-level directory remains empty but locked by Windows (I-24).
-- **Last successful backup or revision:** local `imports/raw/SOURCE_MANIFEST.json`; public copy:
-  `imports/SOURCE_MANIFEST_PUBLIC.json` (SHA-256 of every imported file, with local path removed).
-- **Revision history:** git repository initialised 2026-11-01 on branch `main` and pushed to
-  `github.com/kaffeindecaf/kaffeins-dev-vault` (`a907afc` first commit). I-07 and I-15 are resolved.
-- **Work log system (2026-11-01, schema v2):** session records live in
-  `09 - AI Agent Knowledge/Work Log/` (`type: worklog`, `WL-` IDs). Templates [[T-worklog]] and
-  [[T-handoff]], protocol [[G-worklog-protocol]], decision D-0010. First entry:
-  [[worklog-2026-11-01-worklog-templates]].
-- **Last change (2026-11-01, vault move):** moved the full vault under its versioned parent folder.
-  All 524 files matched by SHA-256 before the source contents were removed. `.obsidian/` moved intact.
-- **Prior content change (2026-11-01):** added generalized system notes adapted from a separate experience
-  and an extraction log. They are `design_only`; adapted code was not tested in this vault ([[ISSUES]] I-19).
-- **Release preparation (2026-11-01):** revised the GitHub README, added Mermaid process diagrams and contribution
-  guidance, added [[RELEASE_CHECKLIST]] and `.gitignore`, and recorded publication blockers in [[ISSUES]].
-- **License and credits (2026-11-01):** selected CC0 1.0 for rights the maintainer owns or may dedicate;
-  added [[CREDITS]] and a sanitized public manifest. The byte-exact raw folder was not edited.
-- **Next three exact actions:** [[NEXT_STEPS]].
+The local content release includes all ten backend systems requested by the owner, 17 implementation files and three Studio test files. [[T-backend-systems-catalog]] is the entry point. [[RELEASE-v1.0.0]] describes compatibility and scope.
+
+## Verification
+
+- Studio Play: 11 cases passed, 0 failed, including 34 mock economy fault assertions and FIFO write contention.
+- Client smoke: four replay assertions passed; telemetry and quest panels rendered with synthetic data.
+- All 20 new source files were exercised as modules or test infrastructure; exact branch coverage is deliberately not claimed.
+- Temporary Studio test roots and client preview objects were removed; Studio returned to Edit.
+- Local vault validation, index and 31-test CLI suite results are recorded in [[worklog-2026-11-02-backend-v1-release]].
+- Live DataStores, MessagingService/MemoryStore, purchases/gamepasses, webhooks, animation assets and mobile performance remain integration work, detailed in [[BACKEND_SYSTEMS_TEST_REPORT]].
+
+## Contents and version
+
+Release version is 1.0.0 in VERSION and config/vault.json. The note schema remains 2 and the historical local folder name stays unchanged.
+
+There are 209 asset candidate notes: 206 preserved imports and three separately researched candidates. Access, safety and runtime status were not promoted by this backend work. Imports remain unchanged.
+
+Current note counts come from `python scripts/gamedev_kb.py report`; the final measured totals are pasted in the release work log. This avoids treating old session counts as the current inventory.
+
+Measured 2026-11-02: **549 content notes**, including **57 systems** and **209 asset candidates**.
+The validator/index walk reports **557 Markdown notes**, including eight schema fixtures.
+Validation: **0 errors, 0 warnings**; report: **0 broken links**; CLI suite: **31 passed**.
+
+## Open work and history
+
+I-31–I-33 in [[ISSUES]] cover service integration, bounded idempotency-history migration and offline transfer reconciliation. Earlier UI/source audit follow-ups, asset verification and roadmap P19/P21 remain separate work; the backend checks do not close them.
+
+Earlier source-place audits and experiments are preserved in their system/reference notes and dated Work Log entries. Working rules: [[AGENTS]]. Release preparation: [[RELEASE_CHECKLIST]]. Next project priorities: [[NEXT_STEPS]].

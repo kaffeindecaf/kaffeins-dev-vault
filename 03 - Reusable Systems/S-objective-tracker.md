@@ -3,7 +3,7 @@ id: S-objective-tracker
 type: system
 title: Quest / objective tracker with save-compatible progress
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [systems, quests, ui]
 source_urls: []
 confidence: medium
@@ -16,6 +16,9 @@ related: "S-save-load-migration", "S-config-module", "S-notification-system"
 ---
 
 # Objective tracker
+
+For concrete versioned blueprints, durable event deduplication, claims and generated progress rows,
+see the v1.0.0 [[S-quest-achievement-blueprint-factory]]. This older sketch retains its design-only label.
 
 Progress is a small map of counters, keyed by objective id, persisted with the player's data. The
 hard part is never the UI — it is defining progress so a schema change does not invalidate saves.

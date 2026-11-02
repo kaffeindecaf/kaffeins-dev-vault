@@ -3,7 +3,7 @@ id: DB-health
 type: dashboard
 title: Vault health
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [dashboard, quality]
 source_urls: []
 ---
@@ -12,18 +12,19 @@ source_urls: []
 
 _Generated from the same data `validate` and `report` print._
 
-- notes: **494**
+- notes: **549**
 - errors: **0** · warnings: **0** · broken wikilinks: **0**
-- references without sources: **43**
+- references without sources: **49**
 
 ## By verification
 
 | State | Notes |
 |---|---:|
-| design_only | 168 |
-| reference_only | 92 |
-| tested_local | 4 |
-| untested | 230 |
+| design_only | 199 |
+| reference_only | 95 |
+| tested_local | 6 |
+| tested_studio | 13 |
+| untested | 236 |
 
 ## Open warnings (first 40)
 

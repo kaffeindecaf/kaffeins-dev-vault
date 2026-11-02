@@ -3,7 +3,7 @@ id: MOC-enemy-ai
 type: moc
 title: Enemy AI — map of content
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [moc]
 source_urls: []
 confidence: high

@@ -17,6 +17,8 @@ related: "R-server-authority-replication", "R-mobile-safe-areas", "S-crouch-and-
 
 # Sprint and stamina
 
+The Grow A Tree static example and its untested server intent adapter are documented in [[R-grow-tree-settings-and-movement]]. The source uses a touch toggle and held keyboard input; the adapter requires an injected server speed policy and is not a complete stamina system.
+
 Client-predicted for feel, server-authoritative for fairness. The server's only job is a ceiling and
 a drain; the client interpolates so it feels instant.
 

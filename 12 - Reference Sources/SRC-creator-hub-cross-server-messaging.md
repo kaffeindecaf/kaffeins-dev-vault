@@ -3,9 +3,9 @@ id: SRC-creator-hub-cross-server-messaging
 type: source
 title: "Cross-server messaging"
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [source, official, roblox]
-source_urls: [ "https://create.roblox.com/docs/cloud-services/cross-server-messaging" ]
+source_urls: [ "https://create.roblox.com/docs/cloud-services/cross-server-messaging", "https://create.roblox.com/docs/reference/engine/classes/MessagingService/SubscribeAsync" ]
 confidence: high
 verification: reference_only
 client_server: both
@@ -19,13 +19,17 @@ related: [ "MOC-sources", "G-roblox-api-links" ]
 |---|---|
 | URL | https://create.roblox.com/docs/cloud-services/cross-server-messaging |
 | Publisher | Roblox (Creator Hub — official) |
-| Accessed | 2026-11-01 (fetched during this build; page resolved) |
+| Accessed | 2026-11-02 (setup guide and delivery contract opened during backend work) |
 | Type | official documentation |
 
 ## What it establishes
 
 - MessagingService delivers topic messages between servers
-- Delivery is at-least-once and not ordered
+- Delivery is best effort and not guaranteed. Do not use a message as the only durable record.
+
+The earlier at-least-once claim was corrected during v1.0.0 work. See the
+[SubscribeAsync contract](https://create.roblox.com/docs/reference/engine/classes/MessagingService/SubscribeAsync)
+and [[SRC-backend-platform-contracts]].
 
 ## What it does not establish
 

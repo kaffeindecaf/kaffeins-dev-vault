@@ -10,6 +10,20 @@ source_urls: []
 
 # Public release checklist
 
+## v1.0.0 local preparation — 2026-11-02
+
+- [x] Added all ten backend systems, catalog, source record and explicit integration limits.
+- [x] Rewrote README and set VERSION/config release_version to 1.0.0; schema remains 2.
+- [x] Recorded 11 passing Studio cases, 34 economy fault checks, FIFO contention, client replay checks and preview.
+- [x] Removed temporary Studio test roots and returned the session to Edit.
+- [x] Ran vault validation, index regeneration and the CLI suite; exact final output is in
+  [[worklog-2026-11-02-backend-v1-release]].
+- [ ] Maintainer publication review and any remote tag/release.
+
+Local content preparation is separate from a GitHub publication. See [[RELEASE-v1.0.0]].
+
+## Earlier repository publication record — 2026-11-01
+
 The maintainer confirmed permission to redistribute the imported research and adapted notes. This checklist records the remaining repository-preparation steps and the attribution details that were not present in the source files.
 
 ## Before making a repository public

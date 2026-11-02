@@ -3,7 +3,7 @@ id: S-round-phase-machine
 type: system
 title: Round phase machine (extracted from a shipping game)
 status: reviewed
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [systems, rounds, extracted]
 source_urls: []
 confidence: high
@@ -16,6 +16,9 @@ related: "R-server-authority-replication", "S-interaction-prompt", "S-late-join-
 ---
 
 # Round phase machine
+
+For the v1.0.0 implementation with independent rooms, membership, loader tokens and phase events,
+see [[S-matchmaking-room-orchestrator]]. Its scoped Studio tests do not promote this older extracted code.
 
 A 60-line module that owns the round's phase and nothing else. Small on purpose: every other system asks it
 `canInteract()` instead of keeping its own copy of "is the round running", which is where inconsistent gating

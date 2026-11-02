@@ -3,12 +3,46 @@ id: N-ISSUES
 type: report
 title: ISSUES — blockers, uncertainties and open work
 status: draft
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [issues, blockers]
 source_urls: []
 ---
 
 # ISSUES
+
+## 2026-11-02 — Practical snippets need Studio verification
+
+- Exercise [[T-community-practical-snippets]] in an isolated Studio place, including teardown failures, rate-limit boundaries and zone transitions. Record evidence before promoting their verification status.
+
+## 2026-11-02 — Community library evaluation
+
+- [[R-community-libraries]] is research only: verify selected versions, licensing, compatibility and behavior in Studio before adoption. The supplied ProfileStore Creator Store listing could not be read by the research browser; its availability and access remain unchecked.
+
+## Curry delivery audit follow-up (2026-11-02)
+
+- `ServerScriptService.anti theft script` attempts to kick players based on skin-color brightness; its `Humanoid.SkinColor` access was not tested. Remove the discriminatory restriction after owner review; this vault session did not alter the place.
+- DeliveryHandler references a missing `ReplicatedStorage.RemoteEvents` folder; DeliveryReset uses an undefined table, while each touch handler has an independent local table and does not require a bowl. Confirm behavior in a safe test and design server-authoritative completion.
+- The initial character root is retained by the progress script, and the source menu uses fixed dimensions and camera motion. Test respawn, keyboard, touch, gamepad, reduced motion and responsive layout; the new helpers are untested. Review external dependencies and asset rights.
+
+## Pop Popcorn audit follow-up (2026-11-02)
+
+- Receipt UpdateAsync and ordinary snapshot saves are not shown sharing a lock, while receipt history is capped at 50. Review stale writes, retries, cross-server concurrency and recoverable idempotency before relying on fulfillment; no purchase test occurred.
+- Production consumes a batch before yielding presentation and does not visibly check output placement success. Test interruption, full or removed output, plot reset and recovery; this is a source-level risk, not a reproduced incident.
+- The new Luau helpers and crop blockout are untested. Verify device/input/accessibility, model rights, audio access, remaining services and performance.
+
+## Drive and Catch audit follow-up (2026-11-02)
+
+- Receipt fulfillment can return PurchaseGranted after a reported time-upgrade failure or maxed carry; the observed receipt-token map is volatile. Review intended compensation, durable PurchaseId idempotency, store-tab delivery and failure handling before relying on it.
+- Area spend/unlock and spin consumption/reward delivery have separate persistence and grant steps; test interruptions, failed load/save, retries and concurrent servers. This is a static observation, not a measured incident.
+- New snippets and vehicle blockout are untested; model and audio rights, runtime behavior, device input, accessibility and performance remain unverified. Continue the uncovered service and model inspection.
+
+## Grow A Tree audit follow-up (2026-11-02)
+
+- The receipt dispatcher is intentionally disabled and requires an independently reviewed, durable idempotent fulfillment transaction. Profile adapter does not implement session lifecycle. Test failure, retry, concurrent-server and shutdown scenarios before any deployment.
+- The model builders are primitive blockouts, not exported game models; source asset rights and model geometry remain unverified. Device, input, focus and server integration remain untested for the new snippets.
+
+- Static inspection did not cover every descendant or script, runtime behavior, purchase security, grant durability, responsive layout, accessibility or performance. Continue the scoped audit and test in a separate safe place.
+- Observed image and audio IDs have unknown ownership, access and reuse rights; verify each before reuse. The session reward snippet has not been executed.
 
 Open items only. Closed items move to [[CHANGELOG]].
 
@@ -42,7 +76,7 @@ Open items only. Closed items move to [[CHANGELOG]].
 | # | Gap | Status |
 |---|---|---|
 | I-09 | Roblox encyclopedia is 24 notes — strong on architecture and security, thinner on animation blending internals. | Open; each note states its own scope. |
-| I-10 | No Roblox Studio test has been run for any recipe. Every code block is labelled `Untested:`. | Open by design — this vault was built without touching a place. |
+| I-10 | Older recipes still lack Studio execution. The v1.0.0 backend pack now has scoped mock/runtime evidence in [[BACKEND_SYSTEMS_TEST_REPORT]]. | Partially resolved; test each project's adopted code and retain exact scope labels. |
 | I-11 | Level design has one complete worked level plan, not a library of layouts. | Open. |
 | I-12 | Progression/economy is deliberately thin (no manipulative-monetisation patterns documented as recommendations). | Closed as a decision: out of scope for V1. |
 
@@ -62,6 +96,13 @@ Open items only. Closed items move to [[CHANGELOG]].
 | I-23 | No pre-rename file-hash manifest was recorded for the source game-vault package. | The package root was renamed after inventory; a pre/post hash comparison is unavailable. | Treat the renamed source as preserved by same-volume directory move; capture a current manifest if future migration is planned. |
 | I-24 | An empty legacy working directory remains locked by a running process outside this vault. | The 524 files are in the active destination and matched by SHA-256; the legacy directory has no vault contents. | Close the process holding that directory and remove the empty stub if desired. |
 
+## UI pattern extraction (2026-11-02)
+
+| # | Issue | Impact | Next action |
+|---|---|---|---|
+| I-29 | The UI patterns and component snippets are based on Explorer/property inspection in Edit mode; the place was not played and no device screenshot or accessibility pass was captured. | Static hierarchy and offset dimensions do not prove runtime layout, interaction quality, responsive fit, or controller support. | Play the place and capture the P21-06 desktop, phone portrait/landscape, and gamepad checks in a separate evidence pass. |
+| I-30 | Image and sound IDs read from the place were not checked for external access, moderation state, license, or reuse permission. | A value in a user's place is not evidence that another experience can use it or that the note can redistribute the asset. | Follow [[G-asset-verification-workflow]] for any ID selected for reuse and document the rights/access evidence before promotion. |
+
 ## Agent work log rollout (2026-11-01)
 
 | # | Issue | Impact | Next action |
@@ -75,6 +116,16 @@ Open items only. Closed items move to [[CHANGELOG]].
 |---|---|---|---|
 | I-28 | GitHub's frontmatter table renders an inline list (`tags: [a, b]`, `related: [...]`) as stray half-rows above the note body. | Cosmetic only; reading on GitHub looks slightly odd on all 494 notes. Obsidian and the CLI are unaffected. | Switch frontmatter lists to block style (`- item` lines, already supported by the parser) in one deliberate pass, or accept it. |
 | I-18 | `imports/raw/…/README.md` collides with the root `README.md` as an Obsidian file stem. | `[[README]]` is ambiguous inside Obsidian; the validator ignores it (imports/ is excluded from the walk). | Imports must stay byte-exact, so the file is not renamed. Link the root README by path when it matters, or open `imports/` as a separate vault. |
+
+## Backend v1.0.0 integration follow-up (2026-11-02)
+
+| # | Issue | Impact | Next action |
+|---|---|---|---|
+| I-31 | Backend evidence uses mock storage/fake receipts and scoped Studio runtime checks, not live service integration. | Multi-server recovery, real purchases/gamepasses, real webhook delivery, animation playback and mobile performance are unproven. | Follow each system's integration checks and record evidence before production adoption; see [[BACKEND_SYSTEMS_TEST_REPORT]]. |
+| I-32 | Account histories deliberately cap at 2,000 entries and never delete replay markers. | Long-running accounts can refuse new updates and defer purchases when they hit history/byte limits. | Design versioned archival/partitioning that preserves deduplication, migrate safely, and monitor headroom before enabling a live economy. |
+| I-33 | Gift hints are ephemeral and offline senders require durable reconciliation or a later login. | A prepared transfer can remain pending after a crash before publishing a hint. | Add a budgeted durable-key sweep/known-sender job; never treat MessagingService or MemoryStore as the only recovery source. |
+
+The backend pack's release identity is content versioning. It does not close these project-specific tests.
 
 ## Deferred by decision
 

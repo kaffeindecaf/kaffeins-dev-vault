@@ -30,8 +30,9 @@ LIBS = [
      "Each note states its execution context (server/client/both) and whether it is documentation-derived "
      "(`reference_only`) or design (`design_only`)."),
     ("03 - Reusable Systems", "MOC-reusable-systems", "MOC-reusable-systems", "Reusable Systems",
-     "Twenty mechanic recipes. Every one has an API contract, a server/client split, a failure-mode table and "
-     "a test list. **No code here has been executed** — each block is labelled `Untested:` until someone runs it."),
+     "Reusable mechanic and backend recipes with explicit ownership, failure modes and test scope. "
+     "The v1.0.0 backend pack is indexed in [[T-backend-systems-catalog]]; scoped Studio evidence is in "
+     "[[BACKEND_SYSTEMS_TEST_REPORT]]. Other snippets retain their individual verification labels."),
     ("04 - Horror Design", "MOC-horror-design", "MOC-horror-design", "Horror Design",
      "Pacing, tension, audio layering, an adaptive director and the accessibility rules that make intensity "
      "safe. Numbers here are starting points to measure against, not results."),
