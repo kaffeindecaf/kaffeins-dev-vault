@@ -10,6 +10,17 @@ source_urls: []
 
 # Public release checklist
 
+## v1.2.0 local preparation — 2026-11-02
+
+- [x] Rebranded the vault and release metadata to Kaffeins Dev Vault / `kaffeins-dev-vault`.
+- [x] Added portable onboarding examples and project-profile/user-goal templates.
+- [x] Added four learning paths, a design-only fictional slice and manual source freshness queue.
+- [x] Added release audit script and recorded clean workspace / starter-link review.
+- [x] Run final validation (557 notes, 0 errors/warnings), index (557 notes, FTS5), generated navigation, report (549 content notes, 0 broken links) and release audit (0 findings; raw-source exception documented).
+- [ ] Push the v1.2.0 commit/tag, then build the ZIP from the tag and publish the GitHub release.
+- [ ] Verify the public release page and attached ZIP; record archive size and SHA-256.
+- [ ] Leave Studio-dependent items open: vertical-slice run, UI runtime review and asset verification.
+
 ## v1.1.0 local preparation — 2026-11-02
 
 - [x] Added project onboarding, a user-goal checklist and reusable roadmap proposals.

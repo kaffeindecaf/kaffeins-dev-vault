@@ -1,6 +1,6 @@
 {
-  "project_name": "GameDev-Knowledge-Base",
-  "release_version": "1.1.0",
+  "project_name": "kaffeins-dev-vault",
+  "release_version": "1.2.0",
   "vault_root": ".",
   "schema_version": 2,
   "content_roots": [

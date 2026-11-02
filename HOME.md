@@ -1,14 +1,16 @@
 ---
 id: N-HOME
 type: moc
-title: HOME — GameDev Knowledge Base
+title: HOME — Kaffeins Dev Vault
 status: reviewed
 updated: 2026-11-02
 tags: [home, dashboard]
 source_urls: []
 ---
 
-# 🏠 GameDev Knowledge Base · v1.0.0
+# 🏠 Kaffeins Dev Vault · v1.2.0
+
+**Kaffeins Dev Vault · v1.2.0:** [[RELEASE-v1.2.0]] · New here? [[SOUL]] and [[ONBOARDING_EXAMPLES]] · [[LEARNING_PATHS]]
 
 **Backend systems:** [[T-backend-systems-catalog]] links all ten systems and their Luau modules.
 Release notes: [[RELEASE-v1.0.0]]. Executed scope: [[BACKEND_SYSTEMS_TEST_REPORT]].

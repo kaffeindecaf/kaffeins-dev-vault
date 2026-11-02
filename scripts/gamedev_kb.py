@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""gamedev_kb — local search, validation and retrieval for a GameDev knowledge vault.
+"""gamedev_kb — local search, validation and retrieval for Kaffeins Dev Vault.
 
 Standard library only (no pip installs). Cross-platform: Windows, Linux, macOS.
 Every command is read-only except `index`, `export` and `report --write-dashboards`,
@@ -819,7 +819,7 @@ def cmd_report(cfg: Config, args):
     if args.json:
         emit(report, True)
     else:
-        print(f"GameDev-Knowledge-Base — {report['generated']}")
+        print(f"Kaffeins Dev Vault — {report['generated']}")
         print(f"notes: {report['notes']}  errors: {report['errors']}  warnings: {report['warnings']}"
               f"  broken links: {report['broken_wikilinks']}")
         print("\nby type:        " + ", ".join(f"{k}={v}" for k, v in report["by_type"].items()))
@@ -930,7 +930,7 @@ def write_dashboards(cfg: Config, notes, report, warnings):
 
 
 def main(argv=None):
-    ap = argparse.ArgumentParser(prog="gamedev_kb", description="Local search, validation and retrieval for the GameDev knowledge vault.")
+    ap = argparse.ArgumentParser(prog="gamedev_kb", description="Local search, validation and retrieval for Kaffeins Dev Vault.")
     ap.add_argument("--root", default=argparse.SUPPRESS, help="vault root (default: parent of scripts/)")
     ap.add_argument("--json", action="store_true", default=argparse.SUPPRESS, help="machine-readable output")
     common = argparse.ArgumentParser(add_help=False)

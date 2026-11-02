@@ -1,25 +1,26 @@
 ---
 id: N-README
 type: guide
-title: Roblox Game Development Knowledge Base — v1.1.0
+title: Kaffeins Dev Vault — v1.2.0
 status: draft
 updated: 2026-11-02
 tags: [readme, setup, roblox, knowledge-base, v1]
 source_urls: []
 ---
 
-# Roblox Game Development Knowledge Base · v1.1.0
+# Kaffeins Dev Vault · v1.2.0
 
 A searchable Roblox development vault with reusable Luau systems, engineering references, UI patterns, game design notes and an asset research catalogue. Browse it in Obsidian, any Markdown editor, or GitHub. Python adds local search and validation; no Obsidian plugin or Python package is required.
 
-**New in v1.0.0:** ten backend systems, 17 implementation modules, a three-file Studio test harness, integration examples and recorded tests. **New in v1.1.0:** project onboarding guidance, a persistent user-goal checklist, generalized patterns and a distribution privacy review. Start with the [backend catalog](<11 - Templates and Schemas/Templates/T-backend-systems-catalog.md>), [project onboarding](SOUL.md), or [v1.1.0 release notes](RELEASE-v1.1.0.md).
+**New in v1.2.0:** onboarding examples, copyable project context templates, four learning paths, a fictional design-only vertical slice, a source freshness queue and a repeatable release privacy audit. Start with the [backend catalog](<11 - Templates and Schemas/Templates/T-backend-systems-catalog.md>), [project onboarding](SOUL.md), or [v1.2.0 release notes](RELEASE-v1.2.0.md).
 
 ## Get started
 
 1. Open the folder containing this README as an Obsidian vault, or browse [HOME](HOME.md).
-2. Find a topic through a library map or terminal search.
-3. For code, read the system contract and copy the linked `.luau` files into correctly named ModuleScripts in your own test place.
-4. Check each note's evidence and remaining integration work before adopting it.
+2. New to the vault? Start at [project onboarding](SOUL.md), review its [conversation examples](ONBOARDING_EXAMPLES.md), then choose a [learning path](LEARNING_PATHS.md).
+3. Find a topic through a library map or terminal search.
+4. For code, read the system contract and copy the linked `.luau` files into correctly named ModuleScripts in your own test place.
+5. Check each note's evidence and remaining integration work before adopting it.
 
 This is a reference library, not a Roblox place or an automatically installed framework. Source snippets live in [Luau Snippets](<11 - Templates and Schemas/Luau Snippets>).
 
@@ -103,7 +104,7 @@ python scripts/gamedev_kb.py index
 python -m unittest discover -s tests -v
 ```
 
-Release identity is `VERSION` plus `config/vault.json:release_version`; note schema versioning is separate. See [STATUS](STATUS.md) for current counts and [RELEASE_CHECKLIST](RELEASE_CHECKLIST.md) for publication checks.
+Release identity is `VERSION` plus `config/vault.json:release_version`; note schema versioning is separate. See [STATUS](STATUS.md) for current counts, [RELEASE_CHECKLIST](RELEASE_CHECKLIST.md) for publication checks, and [RELEASE-v1.2.0](RELEASE-v1.2.0.md) for this release.
 
 ## License and attribution
 

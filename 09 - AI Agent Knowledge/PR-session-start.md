@@ -18,7 +18,7 @@ related: "AGENTS", "N-README", "T-session-wrapup"
 Paste at the beginning of a session, or let the harness inject it:
 
 ```text
-Working in the GameDev-Knowledge-Base vault (Roblox development knowledge base).
+Working in Kaffeins Dev Vault, a Roblox development knowledge base.
 
 Read, in order: AGENTS.md -> SOUL.md and checklist.md -> SCHEMA.md -> the MOC for the area I name.
 At the first session on a game project, ask whether I want a new game or to continue an existing one;

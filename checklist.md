@@ -16,11 +16,12 @@ knowledge vault's own work.
 
 ## Active goals
 
-No active game goals have been recorded. Start with the onboarding flow in [[SOUL]].
+No active goals. Start with the onboarding flow in [[SOUL]] for a new project.
 
 ## Completed goals
 
 - [x] **G-001 — Remove source-specific project details from the downloadable vault** — Done: audited the shared tree, moved detailed source audits and personal work logs into a local ignored archive, generalized reusable notes, and rebuilt navigation. Current validation has no errors or warnings and the report has no broken links. Earlier public history and release archives remain tracked separately in [[ISSUES]] R-06.
+- [x] **G-002 — Complete the vault goals that do not require Roblox Studio and publish the renamed release** — Done: completed the reusable onboarding, learning, freshness and release-audit work; checked the clean workspace and clone workflows; published Kaffeins Dev Vault v1.2.0. Studio-dependent goals remain open in [[ROADMAP]].
 
 ## Goal entry format
 

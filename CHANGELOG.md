@@ -105,7 +105,7 @@ contain reusable guidance and state their remaining verification needs.
 ## 2026-11-01 — V1 build
 
 **Scaffold and safety**
-- Created the canonical `GameDev-Knowledge-Base` vault with 14 numbered libraries, `imports/`,
+- Created the canonical Kaffeins Dev Vault with 14 numbered libraries, `imports/`,
   `exports/`, `scripts/`, `tests/`, `config/`.
 - Copied the research collection byte-exact into `imports/raw/` and recorded SHA-256 for all 14 files
   (`imports/raw/SOURCE_MANIFEST.json`). Nothing under `imports/` is ever edited.

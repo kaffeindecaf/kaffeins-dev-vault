@@ -1,13 +1,13 @@
 ---
 id: N-ROADMAP
-title: GameDev Knowledge Base — Master Roadmap
+title: Kaffeins Dev Vault — Master Roadmap
 type: project-roadmap
 status: planned
 updated: 2026-11-02
 tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 ---
 
-# ROADMAP — Roblox GameDev Knowledge Base
+# ROADMAP — Kaffeins Dev Vault
 
 ## Reusable pattern verification follow-up — 2026-11-02
 
@@ -117,7 +117,7 @@ tags: [roblox, obsidian, knowledge-base, roadmap, ai-agents]
 
 **Phase goal:** Complete the concrete tasks below with real files, tests and an auditable status report.
 
-- [x] **P01-01** Create `GameDev-Knowledge-Base` or honor the already-approved location without silently replacing files.
+- [x] **P01-01** Establish the approved Kaffeins Dev Vault location without silently replacing files.
 - [x] **P01-02** Create root `HOME.md` with short links to library areas, tasks and active projects.
 - [x] **P01-03** Create root `README.md` explaining goals, opening in Obsidian and no-plugin navigation.
 - [x] **P01-04** Copy the provided master prompt into a stable reference location `07 - AI Agent Knowledge/Agent Rules/MASTER_AGENT_PROMPT.md`.
@@ -927,7 +927,7 @@ reusable knowledge.
   `roblox-mcp-workflow` runtime skills without copying their external skill files.
 - [x] **P20-11** Add a DataStore review prompt under the previously empty Prompts folder and link it
   to the persistence notes and skill bridges.
-- [ ] **P20-12** Audit every project starter link after copying the template into a fresh project folder.
+- [x] **P20-12** Audit every project starter link after copying the template into a fresh project folder. A 20-file clean copy was made under ignored exports, its project links were reviewed, then it was removed; see [[clean-workspace-review]].
 
 ### 20C — Official DataStore references and examples
 
@@ -984,22 +984,22 @@ review.
 **Phase goal:** Make the vault easier to adopt in a fresh workspace while keeping game-specific
 context private, examples honestly labeled, and release archives consistent with the reviewed tree.
 
-- [ ] **P22-01** Write short onboarding examples for a new project, an existing project and skipping
+- [x] **P22-01** Write short onboarding examples for a new project, an existing project and skipping
   questions; confirm each path saves only facts the user has actually confirmed.
-- [ ] **P22-02** Add copyable project-profile and user-goal checklist templates that work outside this
+- [x] **P22-02** Add copyable project-profile and user-goal checklist templates that work outside this
   vault, with no sample owner, game name, place ID or personal path.
-- [ ] **P22-03** Test the project onboarding instructions in a clean sample workspace and check that an
+- [x] **P22-03** Test the project onboarding instructions in a clean sample workspace and check that an
   established project is not asked questions whose answers are already documented.
-- [ ] **P22-04** Add learning paths for gameplay scripting, UI, backend systems and horror design; link
+- [x] **P22-04** Add learning paths for gameplay scripting, UI, backend systems and horror design; link
   prerequisite notes and a small observable practice task for each path.
-- [ ] **P22-05** Build one original, fictional vertical-slice example that joins a server-authoritative
+- [x] **P22-05** Build one original, fictional vertical-slice example that joins a server-authoritative
   mechanic, player data and UI. Keep it clearly untested until it runs in a separate Studio place.
-- [ ] **P22-06** Add a repeatable release audit for tracked files and generated archives. Check for
+- [x] **P22-06** Add a repeatable release audit for tracked files and generated archives. Check for
   private local folders, absolute machine paths, credentials and specific project references, with
   explicit documented exceptions for immutable source imports.
 - [ ] **P22-07** Resolve the GitHub frontmatter rendering issue in [[ISSUES]] I-28 with a small
   representative migration trial before considering a whole-vault format change.
-- [ ] **P22-08** Add a freshness review queue for high-impact Roblox API notes, showing source date and
+- [x] **P22-08** Add a freshness review queue for high-impact Roblox API notes, showing source date and
   next review status without fetching external pages unless explicitly requested.
 - [ ] **P22-09** Recheck clean-clone quickstart instructions on Windows and Linux/macOS, including
   offline search, validation and generated dashboards.
