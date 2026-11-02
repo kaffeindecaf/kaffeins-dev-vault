@@ -16,10 +16,10 @@ source_urls: []
 - [x] Added portable onboarding examples and project-profile/user-goal templates.
 - [x] Added four learning paths, a design-only fictional slice and manual source freshness queue.
 - [x] Added release audit script and recorded clean workspace / starter-link review.
-- [x] Run final validation (557 notes, 0 errors/warnings), index (557 notes, FTS5), generated navigation, report (549 content notes, 0 broken links) and release audit (0 findings; raw-source exception documented).
-- [ ] Push the v1.2.0 commit/tag, then build the ZIP from the tag and publish the GitHub release.
-- [ ] Verify the public release page and attached ZIP; record archive size and SHA-256.
-- [ ] Leave Studio-dependent items open: vertical-slice run, UI runtime review and asset verification.
+- [x] Run final validation (558 notes, 0 errors/warnings), index (558 notes, FTS5), generated navigation, report (550 content notes, 0 broken links) and release audit (0 findings; raw-source exception documented).
+- [x] Push commit `ca7ed46` and tag `v1.2.0`, build the ZIP from the tag, and publish the GitHub release.
+- [x] Verify the [public release](https://github.com/kaffeindecaf/kaffeins-dev-vault/releases/tag/v1.2.0) and attached ZIP: 1,321,846 bytes; SHA-256 `ac95e6a89b8207ab5c61aa2826da1c3af96bac310d6d1417cb5b4e26c1afbf68`.
+- [x] Leave Studio-dependent items open: vertical-slice run, UI runtime review and asset verification.
 
 ## v1.1.0 local preparation — 2026-11-02
 

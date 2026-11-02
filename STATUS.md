@@ -35,8 +35,8 @@ There are 209 asset candidate notes: 206 preserved imports and three separately 
 Current note counts come from `python scripts/gamedev_kb.py report`; refresh them after content changes rather than copying old session totals.
 
 Measured 2026-11-02: **549 content notes**, including **57 systems** and **209 asset candidates**.
-The validator checks **557 Markdown notes**, excluding eight schema fixtures from the report count.
-Validation: **0 errors, 0 warnings**; report: **0 broken links**. Index: **557 notes**, FTS5, fingerprint `b84c127d3b37f711`. The general CLI suite was not rerun for this documentation/content release.
+The validator checks **558 Markdown notes**, excluding eight schema fixtures from the report count.
+Validation: **0 errors, 0 warnings**; report: **0 broken links**. Index: **558 notes**, FTS5. The general CLI suite was not rerun for this documentation/content release.
 
 The release privacy audit reported **0 findings** across the release candidate and documented the 15
 immutable `imports/raw/` files as excluded from content scanning. The security test suite contains one
@@ -50,4 +50,5 @@ Project-specific source audits and session records are kept in a local-only arch
 
 Studio-dependent work remains open: P20-18 and P20-22, P21-06/GATE-P21, the fictional slice runtime
 run, live DataStore integration and asset verification. P22-07 still needs a GitHub rendering
-migration trial; P22-09 needs a Linux/macOS clean-clone run.
+migration trial; P22-09 passed a clean Windows clone and still needs Linux/macOS execution. Release
+archive and SHA-256 evidence are in [[RELEASE-v1.2.0]] and the dated work log.

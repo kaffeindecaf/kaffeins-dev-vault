@@ -1002,7 +1002,8 @@ context private, examples honestly labeled, and release archives consistent with
 - [x] **P22-08** Add a freshness review queue for high-impact Roblox API notes, showing source date and
   next review status without fetching external pages unless explicitly requested.
 - [ ] **P22-09** Recheck clean-clone quickstart instructions on Windows and Linux/macOS, including
-  offline search, validation and generated dashboards.
+  offline search, validation and generated dashboards. A fresh v1.2.0 clone passed doctor,
+  validation, index and offline search on Windows; Linux/macOS execution remains open.
 
 **Acceptance gate P22:** A fresh reader can follow an appropriate learning path, copy the project
 context files without inheriting personal details, and reproduce a release audit with no unreviewed
