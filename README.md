@@ -1,18 +1,18 @@
 ---
 id: N-README
 type: guide
-title: Roblox Game Development Knowledge Base — v1.0.0
+title: Roblox Game Development Knowledge Base — v1.1.0
 status: draft
 updated: 2026-11-02
 tags: [readme, setup, roblox, knowledge-base, v1]
 source_urls: []
 ---
 
-# Roblox Game Development Knowledge Base · v1.0.0
+# Roblox Game Development Knowledge Base · v1.1.0
 
 A searchable Roblox development vault with reusable Luau systems, engineering references, UI patterns, game design notes and an asset research catalogue. Browse it in Obsidian, any Markdown editor, or GitHub. Python adds local search and validation; no Obsidian plugin or Python package is required.
 
-**New in v1.0.0:** ten backend systems, 17 implementation modules, a three-file Studio test harness, integration examples and recorded tests. Start with the [backend catalog](<11 - Templates and Schemas/Templates/T-backend-systems-catalog.md>) or [release notes](RELEASE-v1.0.0.md).
+**New in v1.0.0:** ten backend systems, 17 implementation modules, a three-file Studio test harness, integration examples and recorded tests. **New in v1.1.0:** project onboarding guidance, a persistent user-goal checklist, generalized patterns and a distribution privacy review. Start with the [backend catalog](<11 - Templates and Schemas/Templates/T-backend-systems-catalog.md>), [project onboarding](SOUL.md), or [v1.1.0 release notes](RELEASE-v1.1.0.md).
 
 ## Get started
 

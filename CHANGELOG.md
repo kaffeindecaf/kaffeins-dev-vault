@@ -10,6 +10,21 @@ source_urls: []
 
 # CHANGELOG
 
+## v1.1.0 — 2026-11-02 — Project onboarding and distribution cleanup
+
+- Added [[SOUL]] onboarding with new-project, existing-project and skip-question paths; added
+  [[checklist]] for persistent user goals.
+- Generalized project-derived notes, removed private audits and work logs from the shared tree,
+  updated asset-source provenance and added an ignored local archive rule.
+- Expanded [[ROADMAP]] with proposed adoption, learning-path, sample-project and release-audit goals.
+- Kept v1.0.0 backend implementation and evidence unchanged; see [[RELEASE-v1.1.0]].
+
+## 2026-11-02 — Expand the future-work roadmap
+
+- Added a proposed roadmap phase for copyable project onboarding, learning paths, a fictional
+  end-to-end example, clean-clone checks, source freshness and repeatable release privacy review.
+- All new roadmap items remain unchecked until their deliverables and evidence exist.
+
 ## 2026-11-02 — Remove project-specific content from the shared tree
 
 - Moved detailed source audits and owner-specific work logs to a local-only ignored archive.

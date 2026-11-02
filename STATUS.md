@@ -1,7 +1,7 @@
 ---
 id: N-STATUS
 type: report
-title: STATUS — v1.0.0 current build state
+title: STATUS — v1.1.0 current build state
 status: draft
 updated: 2026-11-02
 tags: [status, handoff, release, v1]
@@ -13,9 +13,9 @@ test_evidence: BACKEND_SYSTEMS_TEST_REPORT.md
 related: ["T-backend-systems-catalog", "N-BACKEND-SYSTEMS-TEST-REPORT", "N-ISSUES"]
 ---
 
-# Current status · v1.0.0
+# Current status · v1.1.0
 
-The local content release includes ten backend systems, 17 implementation files and three Studio test files. [[T-backend-systems-catalog]] is the entry point. [[RELEASE-v1.0.0]] describes compatibility and scope.
+The v1.1.0 content release adds project onboarding, persistent user-goal tracking and distribution privacy cleanup to the v1.0.0 backend systems pack. [[T-backend-systems-catalog]] is the backend entry point; [[RELEASE-v1.1.0]] describes this release.
 
 ## Verification
 
@@ -28,14 +28,14 @@ The local content release includes ten backend systems, 17 implementation files 
 
 ## Contents and version
 
-Release version is 1.0.0 in VERSION and config/vault.json. The note schema remains 2.
+Release version is 1.1.0 in VERSION and config/vault.json. The note schema remains 2.
 
 There are 209 asset candidate notes: 206 preserved imports and three separately researched candidates. Access, safety and runtime status were not promoted by this backend work. Imports remain unchanged.
 
 Current note counts come from `python scripts/gamedev_kb.py report`; refresh them after content changes rather than copying old session totals.
 
-Measured 2026-11-02: **538 content notes**, including **57 systems** and **209 asset candidates**.
-The validator checks **546 Markdown notes**, excluding eight schema fixtures.
+Measured 2026-11-02: **541 content notes**, including **57 systems** and **209 asset candidates**.
+The validator checks **549 Markdown notes**, excluding eight schema fixtures.
 Validation: **0 errors, 0 warnings**; report: **0 broken links**. The previously recorded CLI suite had **31 passing tests**; it was not rerun for this documentation-only cleanup.
 
 ## Open work and history

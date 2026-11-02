@@ -10,6 +10,17 @@ source_urls: []
 
 # Public release checklist
 
+## v1.1.0 local preparation — 2026-11-02
+
+- [x] Added project onboarding, a user-goal checklist and reusable roadmap proposals.
+- [x] Generalized project-specific notes and asset provenance; local source audits are ignored.
+- [x] Updated README, VERSION, config/vault.json, STATUS and release notes to v1.1.0.
+- [x] Regenerated navigation/dashboards and checked the current distributable tree.
+- [x] Run final validation and index after release notes/work log are complete; 549 notes checked, 0 errors, 0 warnings, and 0 broken links.
+- [ ] Build the release ZIP from the pushed v1.1.0 tag and inspect its contents.
+- [ ] Publish the v1.1.0 GitHub release with the ZIP attached.
+- [ ] Separately review the older v1.0.0 release archive; it may contain removed project-specific notes.
+
 ## v1.0.0 local preparation — 2026-11-02
 
 - [x] Added all ten backend systems, catalog, source record and explicit integration limits.

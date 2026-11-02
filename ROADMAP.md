@@ -975,6 +975,44 @@ assets.
 
 ---
 
+## Phase 22 — Onboarding, learning paths and release quality (P2)
+
+**Depends on:** 11, 16, 18, 20 and 21. **Deliverables:** reusable project-context templates,
+beginner-friendly learning paths, a fictional integration example, and a repeatable distribution
+review.
+
+**Phase goal:** Make the vault easier to adopt in a fresh workspace while keeping game-specific
+context private, examples honestly labeled, and release archives consistent with the reviewed tree.
+
+- [ ] **P22-01** Write short onboarding examples for a new project, an existing project and skipping
+  questions; confirm each path saves only facts the user has actually confirmed.
+- [ ] **P22-02** Add copyable project-profile and user-goal checklist templates that work outside this
+  vault, with no sample owner, game name, place ID or personal path.
+- [ ] **P22-03** Test the project onboarding instructions in a clean sample workspace and check that an
+  established project is not asked questions whose answers are already documented.
+- [ ] **P22-04** Add learning paths for gameplay scripting, UI, backend systems and horror design; link
+  prerequisite notes and a small observable practice task for each path.
+- [ ] **P22-05** Build one original, fictional vertical-slice example that joins a server-authoritative
+  mechanic, player data and UI. Keep it clearly untested until it runs in a separate Studio place.
+- [ ] **P22-06** Add a repeatable release audit for tracked files and generated archives. Check for
+  private local folders, absolute machine paths, credentials and specific project references, with
+  explicit documented exceptions for immutable source imports.
+- [ ] **P22-07** Resolve the GitHub frontmatter rendering issue in [[ISSUES]] I-28 with a small
+  representative migration trial before considering a whole-vault format change.
+- [ ] **P22-08** Add a freshness review queue for high-impact Roblox API notes, showing source date and
+  next review status without fetching external pages unless explicitly requested.
+- [ ] **P22-09** Recheck clean-clone quickstart instructions on Windows and Linux/macOS, including
+  offline search, validation and generated dashboards.
+
+**Acceptance gate P22:** A fresh reader can follow an appropriate learning path, copy the project
+context files without inheriting personal details, and reproduce a release audit with no unreviewed
+privacy findings.
+
+- [ ] **GATE-P22** Record the workspace, CLI and release-archive evidence; unresolved Studio checks
+  remain labeled as manual follow-up.
+
+---
+
 ## Phase 21 — UI pattern library and responsive review (P1)
 
 **Depends on:** 09, 11, 20. **Deliverables:** reusable UI pattern notes, component recipes, a
