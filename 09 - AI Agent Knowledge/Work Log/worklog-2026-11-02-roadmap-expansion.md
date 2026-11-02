@@ -31,8 +31,12 @@ game-goal ledger, and leave all new work unchecked until it is delivered and ver
 
 ## Verification
 
-Run `python scripts/gamedev_kb.py validate` and `index` after completing this entry; record actual
-output here. The automated test suite is not part of this roadmap-edit request.
+`python scripts/gamedev_kb.py report --write-dashboards` reported `notes: 541  errors: 0 warnings: 0 broken links: 0`.
+
+`python scripts/gamedev_kb.py validate` reported `549 notes checked (8 test fixtures excluded) · 0 errors · 0 warnings`.
+
+`python scripts/gamedev_kb.py index` indexed 549 notes with FTS5. The automated test suite was not
+run; the change adds planning documentation only.
 
 ## Decisions and assumptions
 

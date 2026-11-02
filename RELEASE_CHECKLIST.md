@@ -17,8 +17,8 @@ source_urls: []
 - [x] Updated README, VERSION, config/vault.json, STATUS and release notes to v1.1.0.
 - [x] Regenerated navigation/dashboards and checked the current distributable tree.
 - [x] Run final validation and index after release notes/work log are complete; 549 notes checked, 0 errors, 0 warnings, and 0 broken links.
-- [ ] Build the release ZIP from the pushed v1.1.0 tag and inspect its contents.
-- [ ] Publish the v1.1.0 GitHub release with the ZIP attached.
+- [x] Build the release ZIP from the pushed v1.1.0 tag and inspect its contents; 672 entries, no local archive or index cache.
+- [x] Publish the [v1.1.0 GitHub release](https://github.com/kaffeindecaf/kaffeins-dev-vault/releases/tag/v1.1.0) with `GameDev-Knowledge-Base-v1.1.0.zip` attached (1,314,741 bytes; SHA-256 `ab6f278edd31b588dc70b21b5bf0b3f899a1abe43227936d39030799c6ae7df9`).
 - [ ] Separately review the older v1.0.0 release archive; it may contain removed project-specific notes.
 
 ## v1.0.0 local preparation — 2026-11-02
